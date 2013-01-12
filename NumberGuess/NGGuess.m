@@ -25,21 +25,19 @@
 - (NSString *) compareGuessNumber:(NSArray *)guess{
     
     int i = 0;
-    int j = 0;
     int totalA = 0;
     int totalB = 0;
-    
-    for (i = 0  ; i< targetNumber.count ; i++) {
-        for(j =0; j<guess.count; j++){
-            if(targetNumber[i] == guess[j]){
-                if(i==j){
-                    totalA ++;
-                }else{
-                    totalB ++;
-                }
+
+    for (i=0; i<guess.count; i++){
+        if([targetNumber containsObject: guess[i]]){
+            if (targetNumber[i] == guess[i]){
+                totalA ++;
+            }else{
+                totalB ++;
             }
         }
     }
+
     return [NSString stringWithFormat: @"%dA%dB", totalA, totalB];
 
 }

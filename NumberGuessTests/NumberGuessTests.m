@@ -45,6 +45,13 @@
     STAssertEqualObjects(@"0A1B", result, nil);
 }
 
+- (void)testShouldReturnRandomNumber{
+//    NSArray *randomNumber1 = [guess createTargetNumber];
+//    NSArray *randomNumber2 = [guess createTargetNumber];
+//    STAbsoluteDifference(randomNumber1, randomNumber2);
+
+}
+
 
 
 
