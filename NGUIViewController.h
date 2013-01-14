@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface NGUIViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UITextField *guessInput;
-@property (weak, nonatomic) IBOutlet UIButton *guessAction;
+@property (strong, nonatomic) IBOutlet UITextField *guessInput;
+@property (strong, nonatomic) IBOutlet UIButton *guessAction;
 @property (strong, nonatomic) IBOutlet UILabel *resultText;
 @property (strong, nonatomic) IBOutlet UILabel *gameTitle;
 - (IBAction)guess:(id)sender;

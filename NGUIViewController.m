@@ -14,8 +14,9 @@
 @end
 
 @implementation NGUIViewController{
-    NGGuess *guess;
+    NGGuess *guessGame;
     NSArray *targetNumber;
+    NSMutableArray *convertedArray;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -23,8 +24,8 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         targetNumber = @[@"1",@"2",@"3",@"4"];
-        guess = [[NGGuess alloc] initWithTargetNumber: targetNumber];
-        // Custom initialization
+        convertedArray = [[NSMutableArray alloc] init];
+        guessGame = [[NGGuess alloc] initWithTargetNumber: targetNumber];
     }
     return self;
 }
@@ -43,10 +44,21 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (NSMutableArray *)convertStringToArrayWith:(NSString *)string {
+
+    convertedArray = [NSMutableArray arrayWithCapacity:[string length]];
+    for (int i = 0; i < string.length; i++) {
+        [convertedArray addObject:[NSString stringWithFormat:@"%C", [string characterAtIndex:i]]];
+    }
+    return convertedArray;
+
+}
+
 - (IBAction)guess:(id)sender {
-    NSLog(@"%@", _guessInput.text);
-    
-    
-    
+    NSString *trimmedInputText = [[_guessInput.text copy] stringByTrimmingCharactersInSet:
+                               [NSCharacterSet whitespaceCharacterSet]];
+    NSArray *guessArray = [self convertStringToArrayWith:trimmedInputText];
+    NSString *result = [guessGame compareGuessNumber:guessArray];
+    _resultText.text = result;
 }
 @end

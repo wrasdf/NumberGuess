@@ -24,6 +24,7 @@
 		4943209F169FCEA100069580 /* NGGuess.m in Sources */ = {isa = PBXBuildFile; fileRef = 4943209E169FCEA100069580 /* NGGuess.m */; };
 		496C3F1B16A3C705001D30B5 /* NGUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 496C3F1916A3C705001D30B5 /* NGUIViewController.m */; };
 		496C3F1C16A3C705001D30B5 /* NGUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 496C3F1A16A3C705001D30B5 /* NGUIViewController.xib */; };
+		496C3F1F16A3FF2D001D30B5 /* RandomNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 496C3F1E16A3FF2D001D30B5 /* RandomNumber.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,8 @@
 		496C3F1816A3C705001D30B5 /* NGUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NGUIViewController.h; path = ../NGUIViewController.h; sourceTree = "<group>"; };
 		496C3F1916A3C705001D30B5 /* NGUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NGUIViewController.m; path = ../NGUIViewController.m; sourceTree = "<group>"; };
 		496C3F1A16A3C705001D30B5 /* NGUIViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NGUIViewController.xib; path = ../NGUIViewController.xib; sourceTree = "<group>"; };
+		496C3F1D16A3FF2D001D30B5 /* RandomNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomNumber.h; sourceTree = "<group>"; };
+		496C3F1E16A3FF2D001D30B5 /* RandomNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RandomNumber.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +131,8 @@
 				4943206F169FC93600069580 /* Supporting Files */,
 				4943209D169FCEA100069580 /* NGGuess.h */,
 				4943209E169FCEA100069580 /* NGGuess.m */,
+				496C3F1D16A3FF2D001D30B5 /* RandomNumber.h */,
+				496C3F1E16A3FF2D001D30B5 /* RandomNumber.m */,
 			);
 			path = NumberGuess;
 			sourceTree = "<group>";
@@ -280,6 +285,7 @@
 				49432079169FC93600069580 /* NGAppDelegate.m in Sources */,
 				4943209F169FCEA100069580 /* NGGuess.m in Sources */,
 				496C3F1B16A3C705001D30B5 /* NGUIViewController.m in Sources */,
+				496C3F1F16A3FF2D001D30B5 /* RandomNumber.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
