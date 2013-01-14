@@ -22,6 +22,8 @@
 		49432091169FC93600069580 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4943208F169FC93600069580 /* InfoPlist.strings */; };
 		49432094169FC93600069580 /* NumberGuessTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 49432093169FC93600069580 /* NumberGuessTests.m */; };
 		4943209F169FCEA100069580 /* NGGuess.m in Sources */ = {isa = PBXBuildFile; fileRef = 4943209E169FCEA100069580 /* NGGuess.m */; };
+		496C3F1B16A3C705001D30B5 /* NGUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 496C3F1916A3C705001D30B5 /* NGUIViewController.m */; };
+		496C3F1C16A3C705001D30B5 /* NGUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 496C3F1A16A3C705001D30B5 /* NGUIViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,9 @@
 		49432093169FC93600069580 /* NumberGuessTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NumberGuessTests.m; sourceTree = "<group>"; };
 		4943209D169FCEA100069580 /* NGGuess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGGuess.h; sourceTree = "<group>"; };
 		4943209E169FCEA100069580 /* NGGuess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGGuess.m; sourceTree = "<group>"; };
+		496C3F1816A3C705001D30B5 /* NGUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NGUIViewController.h; path = ../NGUIViewController.h; sourceTree = "<group>"; };
+		496C3F1916A3C705001D30B5 /* NGUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NGUIViewController.m; path = ../NGUIViewController.m; sourceTree = "<group>"; };
+		496C3F1A16A3C705001D30B5 /* NGUIViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NGUIViewController.xib; path = ../NGUIViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +120,9 @@
 		4943206E169FC93600069580 /* NumberGuess */ = {
 			isa = PBXGroup;
 			children = (
+				496C3F1816A3C705001D30B5 /* NGUIViewController.h */,
+				496C3F1916A3C705001D30B5 /* NGUIViewController.m */,
+				496C3F1A16A3C705001D30B5 /* NGUIViewController.xib */,
 				49432077169FC93600069580 /* NGAppDelegate.h */,
 				49432078169FC93600069580 /* NGAppDelegate.m */,
 				4943206F169FC93600069580 /* Supporting Files */,
@@ -233,6 +241,7 @@
 				4943207B169FC93600069580 /* Default.png in Resources */,
 				4943207D169FC93600069580 /* Default@2x.png in Resources */,
 				4943207F169FC93600069580 /* Default-568h@2x.png in Resources */,
+				496C3F1C16A3C705001D30B5 /* NGUIViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +279,7 @@
 				49432075169FC93600069580 /* main.m in Sources */,
 				49432079169FC93600069580 /* NGAppDelegate.m in Sources */,
 				4943209F169FCEA100069580 /* NGGuess.m in Sources */,
+				496C3F1B16A3C705001D30B5 /* NGUIViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +448,7 @@
 				49432099169FC93600069580 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4943209A169FC93600069580 /* Build configuration list for PBXNativeTarget "NumberGuessTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +457,7 @@
 				4943209C169FC93600069580 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

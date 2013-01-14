@@ -7,7 +7,7 @@
 //
 
 #import "NGAppDelegate.h"
-
+#import "NGUIViewController.h"
 @implementation NGAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -15,6 +15,10 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    NGUIViewController  *viewController = [[NGUIViewController alloc]initWithNibName:@"NGUIViewController" bundle:nil];
+    self.window.rootViewController = viewController;
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
