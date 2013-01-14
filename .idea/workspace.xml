@@ -32,9 +32,9 @@
       <file leaf-file-name="NumberGuessTests.m" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/NumberGuessTests/NumberGuessTests.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="79" selection-start="1337" selection-end="1337" vertical-scroll-proportion="0.5791583">
+            <state line="39" column="34" selection-start="890" selection-end="890" vertical-scroll-proportion="1.3175676">
               <folding>
-                <element signature="e#136#164#0" expanded="true" />
+                <element signature="e#137#165#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -49,10 +49,19 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="NSArray.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSArray.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="11" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="NGGuess.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NumberGuess/NGGuess.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="50" selection-start="225" selection-end="225" vertical-scroll-proportion="-3.5454545">
+            <state line="12" column="27" selection-start="215" selection-end="222" vertical-scroll-proportion="9.109091">
               <folding />
             </state>
           </provider>
@@ -333,9 +342,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NumberGuess/NGGuess.m">
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSArray.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="50" selection-start="225" selection-end="225" vertical-scroll-proportion="-3.5454545">
+        <state line="13" column="11" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -354,11 +363,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/NumberGuess/NGGuess.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="27" selection-start="215" selection-end="222" vertical-scroll-proportion="9.109091">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/NumberGuessTests/NumberGuessTests.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="79" selection-start="1337" selection-end="1337" vertical-scroll-proportion="0.5791583">
+        <state line="39" column="34" selection-start="890" selection-end="890" vertical-scroll-proportion="1.3175676">
           <folding>
-            <element signature="e#136#164#0" expanded="true" />
+            <element signature="e#137#165#0" expanded="true" />
           </folding>
         </state>
       </provider>

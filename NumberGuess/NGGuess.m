@@ -18,6 +18,7 @@
     self = [super init];
     if (self) {
         targetNumber = aTargetNumber;
+        tempArr = [[NSMutableArray alloc] init];
     }
     return self;
 }
@@ -46,34 +47,13 @@
     return from + arc4random() % (to-from+1);
 }
 
-- (BOOL) isContainsNumber:(int)number in:(NSMutableArray *)array {
-
-    BOOL *result = FALSE;
-
-    if (!array.count || array.count == 0){
-        return (BOOL) result;                                          //?
-    }
-
-    for(int i = 0; i < array.count; i++){
-        if (array[(NSUInteger) i] == [NSNumber numberWithInt:number]){ //?
-            result = (BOOL *) TRUE;
-            break;
-        }
-    }
-
-    return (BOOL) result;
-}
-
 - (void) insertNonDuplicatedNumber {
     if (tempArr.count < 4){
         int randomNumber = [self getRandomNumber:0 to:9];
-        NSLog(@"%@",[self isContainsNumber:randomNumber in:tempArr]);
-        if ([self isContainsNumber:randomNumber in:tempArr]){
+        if ([tempArr containsObject:[NSNumber numberWithInt:randomNumber]]){
             [self insertNonDuplicatedNumber];
         }else{
-            NSLog(@"%d",123);
             [tempArr addObject: [NSNumber numberWithInt:randomNumber]];
-            NSLog(@"%@",tempArr);
         }
     }
 }
@@ -83,7 +63,6 @@
     for (int i=0; i<4; i++){
         [self insertNonDuplicatedNumber];
     }
-    NSLog(@"%@", tempArr);
     return tempArr;
 }
 

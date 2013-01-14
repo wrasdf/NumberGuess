@@ -1,4 +1,4 @@
-//
+ //
 //  NumberGuessTests.m
 //  NumberGuessTests
 //
@@ -38,7 +38,6 @@
     STAssertEqualObjects(@"0A4B", result, nil);
 }
 
-
 - (void)testShouldReturn0A1BWhenGiveExceptNumber{
     NSArray *guessNumber = @[@"2",@"5",@"7",@"9"];
     NSString *result = [guess compareGuessNumber:guessNumber];
@@ -46,13 +45,9 @@
 }
 
 - (void)testShouldReturnRandomNumber{
-    NSArray *randomNumber1 = [guess createTargetNumber];
+    NSArray *randomNumber1 = [[guess createTargetNumber] copy];
     NSArray *randomNumber2 = [guess createTargetNumber];
-    NSLog(randomNumber1,randomNumber2);                    // ?? assertNotEuqal
-    STAssertEqualObjects(randomNumber1, randomNumber2, nil);
+    STAssertFalse([randomNumber1 isEqualToArray:randomNumber2], nil);
 }
-
-
-
 
 @end
