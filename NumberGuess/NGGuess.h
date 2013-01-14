@@ -12,5 +12,5 @@
 
 - (id)initWithTargetNumber:(NSArray *)aTargetNumber;
 - (NSString *) compareGuessNumber:(NSArray *) guess;
-
+- (NSArray *) createTargetNumber;
 @end
