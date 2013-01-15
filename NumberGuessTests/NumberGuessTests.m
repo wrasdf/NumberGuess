@@ -74,4 +74,18 @@
     STAssertFalse([r1 isEqualToArray:r2], nil);
 }
 
+//- (void)test_should_return_7_when_you_guess_two_times{
+//    NSArray *guessNumber = @[@"1",@"7",@"6",@"5"];
+//    NSString *result = [guess compareGuessNumber:guessNumber];
+//    STAssertEqualObjects(@"1A0B", result, nil);
+//    STAssertEqualObjects(@"8", [guess leftTimes], nil);
+//
+//    NSArray *guessNumber1 = @[@"7",@"9",@"6",@"5"];
+//    NSString *result1 = [guess compareGuessNumber:guessNumber1];
+//    STAssertEqualObjects(@"0A0B", result1, nil);
+//    STAssertEqualObjects(@"7", [guess leftTimes], nil);
+//}
+
+
+
 @end

@@ -14,3 +14,4 @@
 - (NSString *) compareGuessNumber:(NSArray *) guess;
 - (NSArray *) createTargetNumber;
 @end
+
