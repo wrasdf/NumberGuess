@@ -13,7 +13,10 @@
 - (id)initWithTargetNumber:(NSArray *)aTargetNumber;
 - (NSString *) compareGuessNumber:(NSArray *) guess;
 - (NSArray *) createTargetNumber;
-- (NSString *)getGuessTime;
+- (NSString *) getGuessTime;
+- (NSString *) getGameMsg;
+- (NSString *) getGameMaxNumber;
+- (BOOL) keepGuess;
 - (void) reStartGuessGame;
 @end
 

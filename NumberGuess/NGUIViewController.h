@@ -10,5 +10,8 @@
 
 @interface NGUIViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UILabel *guessMsg;
+@property (strong, nonatomic) IBOutlet UILabel *guessText;
+@property (strong, nonatomic) IBOutlet UILabel *resultText;
+@property (strong, nonatomic) IBOutlet UILabel *gameMsg;
 
 @end

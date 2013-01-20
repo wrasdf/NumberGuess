@@ -11,9 +11,9 @@
 @interface NGUIViewController : UIViewController <UITextFieldDelegate>
 @property (strong, nonatomic) IBOutlet UITextField *guessInput;
 @property (strong, nonatomic) IBOutlet UIButton *guessAction;
-@property (strong, nonatomic) IBOutlet UILabel *resultText;
 @property (strong, nonatomic) IBOutlet UILabel *gameTitle;
-//@property (strong, nonatomic) IBOutlet UILabel *gameMessage;
+@property (strong, nonatomic) IBOutlet UILabel *resultText;
+@property (strong, nonatomic) IBOutlet UILabel *gameMsg;
 
 - (IBAction)guess:(id)sender;
 

@@ -82,5 +82,13 @@
     NSString *currentResultTimes = [guess getGuessTime];
     STAssertEqualObjects(@"2", currentResultTimes, nil);
 }
-d
+
+- (void)test_should_return_except_msg_when_user_input_duplicate_number{
+    NSArray *guessNumber1 = @[@"7",@"7",@"6",@"5"];
+    NSString *result = [guess compareGuessNumber:guessNumber1];
+    STAssertEqualObjects(@"0A0B", result, nil);
+    STAssertEqualObjects(@"Please don't input duplicate Numbers.", [guess getGameMsg], nil);
+
+}
+
 @end

@@ -67,10 +67,19 @@
 }
 
 - (IBAction)guess:(id)sender {
-    NSString *trimmedInputText = [[_guessInput.text copy] stringByTrimmingCharactersInSet:
-                               [NSCharacterSet whitespaceCharacterSet]];
-    NSArray *guessArray = [self convertStringToArrayWith:trimmedInputText];
-    NSString *result = [guessGame compareGuessNumber:guessArray];
-    _resultText.text = result;
+    if ([guessGame keepGuess]){
+        NSString *trimmedInputText = [[_guessInput.text copy] stringByTrimmingCharactersInSet:
+                [NSCharacterSet whitespaceCharacterSet]];
+        NSArray *guessArray = [self convertStringToArrayWith:trimmedInputText];
+
+        _resultText.text = [guessGame compareGuessNumber:guessArray];
+        _gameMsg.text = [guessGame getGameMsg];
+    }else{
+        _resultText.text = @"";
+        _gameMsg.text = @"";
+        [sender setTitle:@"Restart" forState:UIControlStateNormal];
+    }
+
+
 }
 @end
