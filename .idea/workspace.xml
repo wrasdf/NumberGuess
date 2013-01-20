@@ -32,16 +32,7 @@
       <file leaf-file-name="NGGuess.h" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NumberGuess/NGGuess.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="25" selection-start="332" selection-end="332" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NumberGuessTests.m" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/NumberGuessTests/NumberGuessTests.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="47" selection-start="2108" selection-end="2108" vertical-scroll-proportion="0.7955912">
+            <state line="17" column="27" selection-start="387" selection-end="387" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -50,18 +41,27 @@
       <file leaf-file-name="NGUIViewController.h" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NGUIViewController.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="29" selection-start="504" selection-end="504" vertical-scroll-proportion="0.0">
+            <state line="16" column="61" selection-start="537" selection-end="537" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NumberGuessTests.m" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/NumberGuessTests/NumberGuessTests.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="84" column="1" selection-start="2471" selection-end="2471" vertical-scroll-proportion="0.9398798">
               <folding>
-                <marker date="1358220023000" expanded="true" signature="228:506" placeholder="..." />
+                <element signature="e#137#165#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RandomNumber.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NumberGuess/RandomNumber.h">
+      <file leaf-file-name="NGUIViewController.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NGUIViewController.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="18" selection-start="216" selection-end="216" vertical-scroll-proportion="0.0">
+            <state line="49" column="52" selection-start="1117" selection-end="1117" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -76,20 +76,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NGUIViewController.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NGUIViewController.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="21" selection-start="1232" selection-end="1232" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="NGGuess.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NumberGuess/NGGuess.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="26" selection-start="219" selection-end="219" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="72" column="0" selection-start="1497" selection-end="1522" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#122#141#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -107,8 +100,8 @@
         <option value="$PROJECT_DIR$/NumberGuessTests/NumberGuessTests.h" />
         <option value="$PROJECT_DIR$/NumberGuess/RandomNumber.h" />
         <option value="$PROJECT_DIR$/NumberGuess/RandomNumber.m" />
-        <option value="$PROJECT_DIR$/NGUIViewController.h" />
         <option value="$PROJECT_DIR$/NGUIViewController.m" />
+        <option value="$PROJECT_DIR$/NGUIViewController.h" />
         <option value="$PROJECT_DIR$/NumberGuess/NGGuess.m" />
         <option value="$PROJECT_DIR$/NumberGuess/NGGuess.h" />
         <option value="$PROJECT_DIR$/NumberGuessTests/NumberGuessTests.m" />
@@ -116,7 +109,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="4" />
+    <option name="x" value="5" />
     <option name="y" value="22" />
     <option name="width" value="1436" />
     <option name="height" value="878" />
@@ -147,6 +140,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="DirectoryView.Xcode" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -207,7 +201,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="DirectoryView.Xcode" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -216,11 +209,19 @@
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
+    <property name="OBJC.PRESERVED_TARGET_SELECTION" value="NumberGuess" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
   </component>
-  <component name="RunManager" selected="OCUnit.UnitTest">
+  <component name="RunManager" selected="OCUnit.All in NumberGuessTests">
     <configuration default="false" name="-[NumberGuessTests testShouldReturn4A0BWhenGiveAllCorrect]" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" SCHEME_NAME="-[NumberGuessTests testShouldReturn4A0BWhenGiveAllCorrect]" PROJECT_NAME="NumberGuess" TARGET_NAME="NumberGuessTests" CONFIG_NAME="Debug" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" TEST_CLASS="NumberGuessTests" TEST_METHOD="testShouldReturn4A0BWhenGiveAllCorrect">
+      <envs />
+      <RunnerSettings RunnerId="AppRunner" />
+      <ConfigurationWrapper RunnerId="AppRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="-[NumberGuessTests test_should_return_correct_guess_times]" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" SCHEME_NAME="-[NumberGuessTests test_should_return_correct_guess_times]" PROJECT_NAME="NumberGuess" TARGET_NAME="NumberGuessTests" CONFIG_NAME="Debug" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" TEST_CLASS="NumberGuessTests" TEST_METHOD="test_should_return_correct_guess_times">
       <envs />
       <RunnerSettings RunnerId="AppRunner" />
       <ConfigurationWrapper RunnerId="AppRunner" />
@@ -254,18 +255,20 @@
       <ConfigurationWrapper RunnerId="InstrumentsRunner" />
       <method />
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.NumberGuess" />
       <item index="1" class="java.lang.String" itemvalue="OCUnit.UnitTest" />
       <item index="2" class="java.lang.String" itemvalue="OCUnit.-[NumberGuessTests testShouldReturn4A0BWhenGiveAllCorrect]" />
-      <item index="3" class="java.lang.String" itemvalue="OCUnit.All in NumberGuessTests" />
+      <item index="3" class="java.lang.String" itemvalue="OCUnit.-[NumberGuessTests test_should_return_correct_guess_times]" />
+      <item index="4" class="java.lang.String" itemvalue="OCUnit.All in NumberGuessTests" />
     </list>
     <recent_temporary>
-      <list size="4">
+      <list size="5">
         <item index="0" class="java.lang.String" itemvalue="OCUnit.All in NumberGuessTests" />
-        <item index="1" class="java.lang.String" itemvalue="OCUnit.All in NumberGuessTests" />
-        <item index="2" class="java.lang.String" itemvalue="OCUnit.All in NumberGuessTests" />
-        <item index="3" class="java.lang.String" itemvalue="OCUnit.-[NumberGuessTests testShouldReturn4A0BWhenGiveAllCorrect]" />
+        <item index="1" class="java.lang.String" itemvalue="OCUnit.-[NumberGuessTests test_should_return_correct_guess_times]" />
+        <item index="2" class="java.lang.String" itemvalue="OCUnit.-[NumberGuessTests test_should_return_correct_guess_times]" />
+        <item index="3" class="java.lang.String" itemvalue="OCUnit.All in NumberGuessTests" />
+        <item index="4" class="java.lang.String" itemvalue="OCUnit.All in NumberGuessTests" />
       </list>
     </recent_temporary>
   </component>
@@ -317,23 +320,23 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="4" y="22" width="1436" height="878" extended-state="6" />
+    <frame x="5" y="22" width="1436" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32908162" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32908162" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24982308" sideWeight="0.67091835" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39923468" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32908162" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32908162" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -389,27 +392,17 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/NumberGuessTests/NumberGuessTests.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="21" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NumberGuess/NGGuess.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="33" selection-start="327" selection-end="327" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/NumberGuess/NGGuess.m">
       <provider selected="true" editor-type-id="text-editor">
         <state line="47" column="55" selection-start="950" selection-end="950" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="e#122#141#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -423,7 +416,9 @@
     <entry file="file://$PROJECT_DIR$/NumberGuessTests/NumberGuessTests.m">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="21" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="e#137#165#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -451,6 +446,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITextField.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="27" selection-start="678" selection-end="678" vertical-scroll-proportion="0.58641976">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIResponder.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="23" selection-start="717" selection-end="725" vertical-scroll-proportion="0.57114226">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/NumberGuess/RandomNumber.h">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="18" selection-start="216" selection-end="216" vertical-scroll-proportion="0.0">
@@ -460,16 +469,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/NGUIViewController.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="29" selection-start="504" selection-end="504" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1358220023000" expanded="true" signature="228:506" placeholder="..." />
-          </folding>
+        <state line="16" column="61" selection-start="537" selection-end="537" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/NGUIViewController.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="21" selection-start="1232" selection-end="1232" vertical-scroll-proportion="0.0">
+        <state line="49" column="52" selection-start="1117" selection-end="1117" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -483,22 +490,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/NumberGuess/NGGuess.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="26" selection-start="219" selection-end="219" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="72" column="0" selection-start="1497" selection-end="1522" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#122#141#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/NumberGuess/NGGuess.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="25" selection-start="332" selection-end="332" vertical-scroll-proportion="0.0">
+        <state line="17" column="27" selection-start="387" selection-end="387" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/NumberGuessTests/NumberGuessTests.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="47" selection-start="2108" selection-end="2108" vertical-scroll-proportion="0.7955912">
-          <folding />
+        <state line="84" column="1" selection-start="2471" selection-end="2471" vertical-scroll-proportion="0.9398798">
+          <folding>
+            <element signature="e#137#165#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

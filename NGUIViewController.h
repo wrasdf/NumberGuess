@@ -13,6 +13,7 @@
 @property (strong, nonatomic) IBOutlet UIButton *guessAction;
 @property (strong, nonatomic) IBOutlet UILabel *resultText;
 @property (strong, nonatomic) IBOutlet UILabel *gameTitle;
+//@property (strong, nonatomic) IBOutlet UILabel *gameMessage;
 
 - (IBAction)guess:(id)sender;
 

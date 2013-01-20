@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface NGUIViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UILabel *guessMsg;
 
 @end
