@@ -22,6 +22,7 @@
 		49432091169FC93600069580 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4943208F169FC93600069580 /* InfoPlist.strings */; };
 		49432094169FC93600069580 /* NumberGuessTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 49432093169FC93600069580 /* NumberGuessTests.m */; };
 		4943209F169FCEA100069580 /* NGGuess.m in Sources */ = {isa = PBXBuildFile; fileRef = 4943209E169FCEA100069580 /* NGGuess.m */; };
+		495C727A16AD5CF6005AA0E3 /* QXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495C727916AD5CF6005AA0E3 /* QXViewController.m */; };
 		496C3F1B16A3C705001D30B5 /* NGUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 496C3F1916A3C705001D30B5 /* NGUIViewController.m */; };
 		496C3F1C16A3C705001D30B5 /* NGUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 496C3F1A16A3C705001D30B5 /* NGUIViewController.xib */; };
 		496C3F1F16A3FF2D001D30B5 /* RandomNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 496C3F1E16A3FF2D001D30B5 /* RandomNumber.m */; };
@@ -59,6 +60,8 @@
 		49432093169FC93600069580 /* NumberGuessTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NumberGuessTests.m; sourceTree = "<group>"; };
 		4943209D169FCEA100069580 /* NGGuess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGGuess.h; sourceTree = "<group>"; };
 		4943209E169FCEA100069580 /* NGGuess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGGuess.m; sourceTree = "<group>"; };
+		495C727816AD5CF6005AA0E3 /* QXViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QXViewController.h; sourceTree = "<group>"; };
+		495C727916AD5CF6005AA0E3 /* QXViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QXViewController.m; sourceTree = "<group>"; };
 		496C3F1816A3C705001D30B5 /* NGUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NGUIViewController.h; path = ../NGUIViewController.h; sourceTree = "<group>"; };
 		496C3F1916A3C705001D30B5 /* NGUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NGUIViewController.m; path = ../NGUIViewController.m; sourceTree = "<group>"; };
 		496C3F1A16A3C705001D30B5 /* NGUIViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NGUIViewController.xib; path = ../NGUIViewController.xib; sourceTree = "<group>"; };
@@ -126,6 +129,8 @@
 				496C3F1816A3C705001D30B5 /* NGUIViewController.h */,
 				496C3F1916A3C705001D30B5 /* NGUIViewController.m */,
 				496C3F1A16A3C705001D30B5 /* NGUIViewController.xib */,
+				495C727816AD5CF6005AA0E3 /* QXViewController.h */,
+				495C727916AD5CF6005AA0E3 /* QXViewController.m */,
 				49432077169FC93600069580 /* NGAppDelegate.h */,
 				49432078169FC93600069580 /* NGAppDelegate.m */,
 				4943206F169FC93600069580 /* Supporting Files */,
@@ -286,6 +291,7 @@
 				4943209F169FCEA100069580 /* NGGuess.m in Sources */,
 				496C3F1B16A3C705001D30B5 /* NGUIViewController.m in Sources */,
 				496C3F1F16A3FF2D001D30B5 /* RandomNumber.m in Sources */,
+				495C727A16AD5CF6005AA0E3 /* QXViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
