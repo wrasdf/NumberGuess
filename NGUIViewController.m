@@ -1,11 +1,3 @@
-//
-//  NGUIViewController.m
-//  NumberGuess
-//
-//  Created by twer on 1/14/13.
-//  Copyright (c) 2013 twer. All rights reserved.
-//
-
 #import "NGUIViewController.h"
 #import "NGGuess.h"
 
@@ -15,17 +7,16 @@
 
 @implementation NGUIViewController{
     NGGuess *guessGame;
-    NSArray *targetNumber;
     NSMutableArray *convertedArray;
+    BOOL resetGame;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        targetNumber = @[@"1",@"2",@"3",@"4"];
+        guessGame = [[NGGuess alloc] initWithRandomNumber];
         convertedArray = [[NSMutableArray alloc] init];
-        guessGame = [[NGGuess alloc] initWithTargetNumber: targetNumber];
     }
     return self;
 }
@@ -67,19 +58,29 @@
 }
 
 - (IBAction)guess:(id)sender {
+
+    if (resetGame){
+        _resultText.text = @"";
+        _gameMsg.text = @"";
+        _guessInput.text = @"";
+        [sender setTitle:@"Guess" forState:UIControlStateNormal];
+        [guessGame reStartGuessGame];
+        resetGame = NO;
+        return;
+    }
+
     if ([guessGame keepGuess]){
         NSString *trimmedInputText = [[_guessInput.text copy] stringByTrimmingCharactersInSet:
                 [NSCharacterSet whitespaceCharacterSet]];
         NSArray *guessArray = [self convertStringToArrayWith:trimmedInputText];
-
         _resultText.text = [guessGame compareGuessNumber:guessArray];
         _gameMsg.text = [guessGame getGameMsg];
-    }else{
-        _resultText.text = @"";
-        _gameMsg.text = @"";
-        [sender setTitle:@"Restart" forState:UIControlStateNormal];
     }
 
+    if ([guessGame isFinished] || ![guessGame keepGuess]){
+        [sender setTitle:@"Restart" forState:UIControlStateNormal];
+        resetGame = YES;
+    }
 
 }
 @end

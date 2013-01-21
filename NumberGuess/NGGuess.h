@@ -10,6 +10,7 @@
 
 @interface NGGuess : NSObject
 
+- (id)initWithRandomNumber;
 - (id)initWithTargetNumber:(NSArray *)aTargetNumber;
 - (NSString *) compareGuessNumber:(NSArray *) guess;
 - (NSArray *) createTargetNumber;
@@ -17,6 +18,7 @@
 - (NSString *) getGameMsg;
 - (NSString *) getGameMaxNumber;
 - (BOOL) keepGuess;
+- (BOOL) isFinished;
 - (void) reStartGuessGame;
 @end
 

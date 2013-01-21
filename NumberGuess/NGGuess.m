@@ -6,6 +6,7 @@
     NSString *gameMessage;
     int maxNumber;
     int currentTime;
+    BOOL finishedGuess;
 }
 
 - (id)initWithRandomNumber {
@@ -26,6 +27,7 @@
         gameMessage = @"";
         currentTime = 0;
         maxNumber = 5;
+        finishedGuess = NO;
     }
     return self;
 }
@@ -46,11 +48,10 @@
         return @"0A0B";
     }
 
-
-
     currentTime++;
     int totalA = 0;
     int totalB = 0;
+
 
     for (int i = 0; i < guess.count; i++) {
         if ([targetNumber containsObject:guess[i]]) {
@@ -64,20 +65,30 @@
 
     NSString *result = [NSString stringWithFormat:@"%dA%dB", totalA, totalB];
 
-    if (currentTime == maxNumber && [self guessSuccess:result]){
-        gameMessage = @"Congratulations. You have win this game.";
-    }
+    if([self guessSuccess:result]){
 
-    if (currentTime < maxNumber && [self guessSuccess:result]){
-        gameMessage = [NSString stringWithFormat:@"Congratulations. You only use %d times to win this game.",currentTime];
-    }
+        if (currentTime == maxNumber){
+            gameMessage = @"Congratulations. You have win this game.";
+        }
 
-    if (currentTime < maxNumber && ![self guessSuccess:result]){
-        gameMessage = [NSString stringWithFormat:@"You left only %d times.", (maxNumber - currentTime)];
-    }
+        if (currentTime < maxNumber){
+            gameMessage = [NSString stringWithFormat:@"Congratulations. You only use %d times to win this game.",currentTime];
+        }
 
-    if (currentTime == maxNumber && ![self guessSuccess:result]){
-        gameMessage = @"You have failed this game.";
+        finishedGuess = YES;
+
+    }else{
+
+        if (currentTime < maxNumber){
+            gameMessage = [NSString stringWithFormat:@"You left only %d times.", (maxNumber - currentTime)];
+        }
+
+        if (currentTime == maxNumber){
+            gameMessage = @"You have failed this game.";
+        }
+
+        finishedGuess = NO;
+
     }
 
     return result;
@@ -135,13 +146,15 @@
     }else{
         return NO;
     }
-
 }
 
-
-- (NSArray *)createTargetNumber {
+- (NSArray *) createTargetNumber {
     RandomNumber *randomNumber = [[RandomNumber alloc] init];
     return [randomNumber create];
+}
+
+- (BOOL) isFinished{
+     return finishedGuess;
 }
 
 - (BOOL) keepGuess{
