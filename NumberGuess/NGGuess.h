@@ -8,7 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NGGuess : NSObject
+@interface
+NGGuess : NSObject
 
 - (id)initWithRandomNumber;
 - (id)initWithTargetNumber:(NSArray *)aTargetNumber;

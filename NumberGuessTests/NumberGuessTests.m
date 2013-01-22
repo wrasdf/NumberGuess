@@ -35,7 +35,6 @@
     NSArray *guessNumber = @[@"1",@"2",@"3",@"4"];
     NSString *result = [guess compareGuessNumber:guessNumber];
     STAssertEqualObjects(@"4A0B", result, nil);
-    STAssertTrue(@"1" == @"1", @"", nil);
 }
 
 - (void)testShouldReturn0A4BWhenGiveAllinCorrect{
@@ -89,5 +88,30 @@
     STAssertEqualObjects(@"0A0B", result, nil);
     STAssertEqualObjects(@"Please don't input duplicate numbers.", [guess getGameMsg], nil);
 }
+
+- (void)test_should_return_error_message_when_input_nothing{
+    NSArray *guessNumber = @[];
+    NSString *result = [guess compareGuessNumber:guessNumber];
+    NSString *msg = [guess getGameMsg];
+    STAssertEqualObjects(@"0A0B", result, nil);
+    STAssertEqualObjects(@"Please input numbers.", msg, nil);
+}
+
+- (void)test_should_return_congratulations_when_we_guess_once_to_win_the_game{
+    NSArray *guessNumber = @[@"1",@"2",@"3",@"4"];
+    NSString *result = [guess compareGuessNumber:guessNumber];
+    NSString *msg = [guess getGameMsg];
+    STAssertEqualObjects(@"4A0B", result, nil);
+    STAssertEqualObjects(@"Congratulations. You only use 1 times to win this game.", msg, nil);
+}
+
+- (void)test_should_return_congratulations_when_we_win_games{
+    NSArray *guessNumber = @[@"1",@"2",@"3",@"4"];
+    NSString *result = [guess compareGuessNumber:guessNumber];
+    NSString *msg = [guess getGameMsg];
+    STAssertEqualObjects(@"4A0B", result, nil);
+    STAssertEqualObjects(@"Congratulations. You only use 1 times to win this game.", msg, nil);
+}
+
 
 @end
