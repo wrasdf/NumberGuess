@@ -24,6 +24,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+//    NSLog(@"x:%d, y:%d", _gameMsg.frame.origin.x,_gameMsg.frame.origin.y);
+    
     // Do any additional setup after loading the view from its nib.
     _guessInput.delegate = self;
     
@@ -57,22 +59,28 @@
 
 }
 
+
+- (void) resetUI:(id) sender {
+    _resultText.text = @"";
+    _gameMsg.text = @"";
+    _guessInput.text = @"";
+    [sender setTitle:@"Guess" forState:UIControlStateNormal];
+    [guessGame reStartGuessGame];
+    resetGame = NO;
+}
+
+
 - (IBAction)guess:(id)sender {
 
     if (resetGame){
-        _resultText.text = @"";
-        _gameMsg.text = @"";
-        _guessInput.text = @"";
-        [sender setTitle:@"Guess" forState:UIControlStateNormal];
-        [guessGame reStartGuessGame];
-        resetGame = NO;
+        [self resetUI:sender];
         return;
     }
 
     if ([guessGame keepGuess]){
-        NSString *trimmedInputText = [[_guessInput.text copy] stringByTrimmingCharactersInSet:
-                [NSCharacterSet whitespaceCharacterSet]];
-        NSArray *guessArray = [self convertStringToArrayWith:trimmedInputText];
+        NSArray *guessArray = [self convertStringToArrayWith:[[_guessInput.text copy] stringByTrimmingCharactersInSet:
+                [NSCharacterSet whitespaceCharacterSet]]];
+
         _resultText.text = [guessGame compareGuessNumber:guessArray];
         _gameMsg.text = [guessGame getGameMsg];
     }

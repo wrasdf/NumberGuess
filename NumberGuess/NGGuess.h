@@ -14,10 +14,8 @@ NGGuess : NSObject
 - (id)initWithRandomNumber;
 - (id)initWithTargetNumber:(NSArray *)aTargetNumber;
 - (NSString *) compareGuessNumber:(NSArray *) guess;
-- (NSArray *) createTargetNumber;
-- (NSString *) getGuessTime;
+- (int) getGuessTime;
 - (NSString *) getGameMsg;
-- (NSString *) getGameMaxNumber;
 - (BOOL) keepGuess;
 - (BOOL) isFinished;
 - (void) reStartGuessGame;

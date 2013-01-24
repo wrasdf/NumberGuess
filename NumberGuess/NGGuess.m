@@ -1,21 +1,28 @@
 #import "NGGuess.h"
 #import "RandomNumber.h"
+#import "NGValidation.h"
+
 
 @implementation NGGuess {
     NSArray *targetNumber;
     NSString *gameMessage;
-    int maxNumber;
-    int currentTime;
+    NGValidation *validation;
+    RandomNumber *randomNumber;
+    int maxCount;
+    int currentCount;
     BOOL finishedGuess;
 }
 
 - (id)initWithRandomNumber {
     self = [super init];
     if (self) {
-        targetNumber = [[[RandomNumber alloc] init] create];
+        randomNumber = [[RandomNumber alloc] init];
+        targetNumber = [randomNumber create];
+        validation = [[NGValidation alloc] init];
         gameMessage = @"";
-        currentTime = 0;
-        maxNumber = 5;
+        currentCount = 0;
+        maxCount = 5;
+        finishedGuess = NO;
     }
     return self;
 }
@@ -24,9 +31,10 @@
     self = [super init];
     if (self) {
         targetNumber = aTargetNumber;
+        validation = [[NGValidation alloc] init];
         gameMessage = @"";
-        currentTime = 0;
-        maxNumber = 5;
+        currentCount = 0;
+        maxCount = 5;
         finishedGuess = NO;
     }
     return self;
@@ -34,21 +42,26 @@
 
 - (NSString *)compareGuessNumber:(NSArray *)guess {
 
-    if (currentTime >= maxNumber){
+    if (currentCount >= maxCount){
         return @"";
     }
 
-    if ([self isEmpty: guess]){
+    if ([validation isEmpty: guess]){
         gameMessage = @"Please input numbers.";
-        return @"0A0B";
+        return @"";
     }
 
-    if ([self hasDuplicatedNumber : guess]){
+    if (![validation isFourDigits:guess]){
+        gameMessage = @"You input is not valid. You only could input 4 digal numbers between 0 - 9.";
+        return @"";
+    }
+
+    if ([validation hasDuplicatedNumber : guess]){
         gameMessage = @"Please don't input duplicate numbers.";
-        return @"0A0B";
+        return @"";
     }
 
-    currentTime++;
+    currentCount++;
     int totalA = 0;
     int totalB = 0;
 
@@ -65,25 +78,25 @@
 
     NSString *result = [NSString stringWithFormat:@"%dA%dB", totalA, totalB];
 
-    if([self guessSuccess:result]){
+    if([validation guessSuccess:result]){
 
-        if (currentTime == maxNumber){
+        if (currentCount == maxCount){
             gameMessage = @"Congratulations. You have win this game.";
         }
 
-        if (currentTime < maxNumber){
-            gameMessage = [NSString stringWithFormat:@"Congratulations. You only use %d times to win this game.",currentTime];
+        if (currentCount < maxCount){
+            gameMessage = [NSString stringWithFormat:@"Congratulations. You only use %d times to win this game.", currentCount];
         }
 
         finishedGuess = YES;
 
     }else{
 
-        if (currentTime < maxNumber){
-            gameMessage = [NSString stringWithFormat:@"You left only %d times.", (maxNumber - currentTime)];
+        if (currentCount < maxCount){
+            gameMessage = [NSString stringWithFormat:@"You left only %d times.", (maxCount - currentCount)];
         }
 
-        if (currentTime == maxNumber){
+        if (currentCount == maxCount){
             gameMessage = @"You have failed this game.";
         }
 
@@ -95,70 +108,27 @@
 
 }
 
-- (BOOL) guessSuccess : (NSString *)result{
-    if ([result isEqual:@"4A0B"]){
-        return YES;
-    }else{
-        return NO;
-    }
-}
-
-- (NSString *)getGuessTime {
-    return [NSString stringWithFormat:@"%d", currentTime];
+- (int )getGuessTime {
+    return currentCount;
 }
 
 - (NSString *) getGameMsg {
     return  gameMessage;
 }
 
-- (NSString *) getGameMaxNumber{
-    return [NSString stringWithFormat:@"%d", maxNumber];
-}
-
 - (void)reStartGuessGame {
-    currentTime = 0;
+    currentCount = 0;
     gameMessage = @"";
-    targetNumber = [self createTargetNumber];
+    targetNumber = [randomNumber create];
 }
 
-- (BOOL)hasDuplicatedNumber:(NSArray *)array {
-//    NSMutableSet *seen = [NSMutableSet set];
-    NSMutableArray *temp = [[NSMutableArray alloc] init];
-    int i = 0;
-    while (i < [array count]) {
-        id obj = [array objectAtIndex:i];
-        if (![temp containsObject:obj]) {
-            [temp addObject:obj];
-        }
-        i++;
-    }
-    if ([temp count] == 4) {
-        return NO;
-    }
-
-    return YES;
-
-}
-
--(BOOL) isEmpty:(NSArray *)array{
-    if ([array count] == 0){
-        return YES;
-    }else{
-        return NO;
-    }
-}
-
-- (NSArray *) createTargetNumber {
-    RandomNumber *randomNumber = [[RandomNumber alloc] init];
-    return [randomNumber create];
-}
 
 - (BOOL) isFinished{
      return finishedGuess;
 }
 
 - (BOOL) keepGuess{
-    if (currentTime < maxNumber){
+    if (currentCount < maxCount){
         return YES;
     }else{
         return NO;

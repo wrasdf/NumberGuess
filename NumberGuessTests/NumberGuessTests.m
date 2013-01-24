@@ -9,12 +9,15 @@
 #import "NumberGuessTests.h"
 #import "RandomNumber.h"
 #import "NGGuess.h"
+#import "NGValidation.h"
+
 
 
 @implementation NumberGuessTests{
     NSArray *targetNumber;
     NGGuess *guess;
     RandomNumber *randomNumber;
+    NGValidation *validation;
 }
 
 
@@ -22,8 +25,10 @@
     [super setUp];
     targetNumber = @[@"1",@"2",@"3",@"4"];
     randomNumber = [[RandomNumber alloc] init];
+    validation = [[NGValidation alloc] init];
     guess = [[NGGuess alloc] initWithTargetNumber: targetNumber];
-    
+
+
 }
 
 - (void)tearDown
@@ -61,12 +66,6 @@
     STAssertEqualObjects(@"0A0B", result, nil);
 }
 
-- (void)testShouldReturnRandomNumber{
-    NSArray *randomNumber1 = [[guess createTargetNumber] copy];
-    NSArray *randomNumber2 = [guess createTargetNumber];
-    STAssertFalse([randomNumber1 isEqualToArray:randomNumber2], nil);
-}
-
 - (void)testShouldReturnRandomNumberByRandomClass{
     NSArray *r1 = [[randomNumber create] copy];
     NSArray *r2 = [randomNumber create];
@@ -78,14 +77,14 @@
     [guess compareGuessNumber:guessNumber1];
     NSArray *guessNumber2 = @[@"1",@"7",@"6",@"5"];
     [guess compareGuessNumber:guessNumber2];
-    NSString *currentResultTimes = [guess getGuessTime];
-    STAssertEqualObjects(@"2", currentResultTimes, nil);
+    int currentResultTimes = [guess getGuessTime];
+    STAssertEquals(2, currentResultTimes, nil);
 }
 
 - (void)test_should_return_except_msg_when_user_input_duplicate_number{
     NSArray *guessNumber1 = @[@"7",@"7",@"6",@"5"];
     NSString *result = [guess compareGuessNumber:guessNumber1];
-    STAssertEqualObjects(@"0A0B", result, nil);
+    STAssertEqualObjects(@"", result, nil);
     STAssertEqualObjects(@"Please don't input duplicate numbers.", [guess getGameMsg], nil);
 }
 
@@ -93,7 +92,7 @@
     NSArray *guessNumber = @[];
     NSString *result = [guess compareGuessNumber:guessNumber];
     NSString *msg = [guess getGameMsg];
-    STAssertEqualObjects(@"0A0B", result, nil);
+    STAssertEqualObjects(@"", result, nil);
     STAssertEqualObjects(@"Please input numbers.", msg, nil);
 }
 
@@ -112,6 +111,34 @@
     STAssertEqualObjects(@"4A0B", result, nil);
     STAssertEqualObjects(@"Congratulations. You only use 1 times to win this game.", msg, nil);
 }
+
+- (void)test_should_return_non_equal_random_numbers{
+    NSArray *rand1 = [randomNumber create];
+    NSArray *rand2 = [randomNumber create];
+    STAssertEqualObjects(rand1, rand2, nil, nil);
+}
+
+- (void)test_should_return_true_you_input_correct_numbers{
+    NSArray *guessNumber = @[@"1",@"2",@"3",@"4"];
+    BOOL isFourNumbers = [validation isFourDigits:guessNumber];
+    BOOL isEmptyBool = [validation isEmpty:guessNumber];
+    BOOL hasDuplicatedNumberBool = [validation hasDuplicatedNumber:guessNumber];
+    STAssertTrue(isFourNumbers == YES, nil);
+    STAssertTrue(isEmptyBool == NO, nil);
+    STAssertTrue(hasDuplicatedNumberBool == NO, nil);
+}
+
+- (void)test_should_return_false_you_input_incorrect_numbers{
+    NSArray *guessNumber1 = @[@"1",@"g",@"3",@"4"];
+    NSArray *guessNumber2 = @[@"1",@"1",@"3",@"4"];
+    BOOL isFourNumbers = [validation isFourDigits:guessNumber1];
+    BOOL isEmptyBool = [validation isEmpty:guessNumber2];
+    BOOL hasDuplicatedNumberBool = [validation hasDuplicatedNumber:guessNumber2];
+    STAssertTrue(isFourNumbers == NO, nil);
+    STAssertTrue(isEmptyBool == NO, nil);
+    STAssertTrue(hasDuplicatedNumberBool == YES, nil);
+}
+
 
 
 @end
