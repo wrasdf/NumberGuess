@@ -10,9 +10,6 @@
 
 @interface NGValidation : NSObject
 
-- (BOOL) isFourDigits:(NSArray *) array;
-- (BOOL) hasDuplicatedNumber:(NSArray *)array;
-- (BOOL) isEmpty:(NSArray *)array;
-- (BOOL) guessSuccess : (NSString *) result;
+- (NSString *) isValid:(NSArray *)array;
 
 @end

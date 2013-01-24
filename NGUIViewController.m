@@ -1,49 +1,48 @@
 #import "NGUIViewController.h"
-#import "NGGuess.h"
+#import "NGMaster.h"
+#import "RandomNumber.h"
 
 @interface NGUIViewController ()
 
 @end
 
-@implementation NGUIViewController{
-    NGGuess *guessGame;
+@implementation NGUIViewController {
+    NGMaster *guessMaster;
     NSMutableArray *convertedArray;
+    NSDictionary *guessResult;
     BOOL resetGame;
 }
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        guessGame = [[NGGuess alloc] initWithRandomNumber];
+        RandomNumber *randomNumber = [[RandomNumber alloc] init];
+
+        guessMaster = [[NGMaster alloc] initWithMaxCount:5 andTargetNumbers:[randomNumber create]];
         convertedArray = [[NSMutableArray alloc] init];
     }
     return self;
 }
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 //    NSLog(@"x:%d, y:%d", _gameMsg.frame.origin.x,_gameMsg.frame.origin.y);
-    
+
     // Do any additional setup after loading the view from its nib.
     _guessInput.delegate = self;
-    
+
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
-{
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     [_guessInput resignFirstResponder];
 }
 
-- (BOOL)textFieldShouldReturn:(UITextField *)textField
-{
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
     [textField resignFirstResponder];
     return YES;
 }
@@ -59,33 +58,30 @@
 
 }
 
-
-- (void) resetUI:(id) sender {
+- (void)resetUI:(id)sender {
     _resultText.text = @"";
     _gameMsg.text = @"";
     _guessInput.text = @"";
     [sender setTitle:@"Guess" forState:UIControlStateNormal];
-    [guessGame reStartGuessGame];
+    [guessMaster resetGame];
     resetGame = NO;
 }
 
-
 - (IBAction)guess:(id)sender {
 
-    if (resetGame){
+    if (resetGame) {
         [self resetUI:sender];
         return;
     }
 
-    if ([guessGame keepGuess]){
-        NSArray *guessArray = [self convertStringToArrayWith:[[_guessInput.text copy] stringByTrimmingCharactersInSet:
-                [NSCharacterSet whitespaceCharacterSet]]];
-
-        _resultText.text = [guessGame compareGuessNumber:guessArray];
-        _gameMsg.text = [guessGame getGameMsg];
+    if (![guessMaster isExceeded]) {
+        guessResult = [guessMaster guessWithNumbers:[self convertStringToArrayWith:[[_guessInput.text copy] stringByTrimmingCharactersInSet:
+                [NSCharacterSet whitespaceCharacterSet]]]];
+        _resultText.text = [guessResult objectForKey:@"result"];
+        _gameMsg.text = [guessResult objectForKey:@"msg"];
     }
 
-    if ([guessGame isFinished] || ![guessGame keepGuess]){
+    if ([[guessResult objectForKey:@"isFinished"] isEqual:@"YES"] || [guessMaster isExceeded]) {
         [sender setTitle:@"Restart" forState:UIControlStateNormal];
         resetGame = YES;
     }

@@ -11,13 +11,7 @@
 @interface
 NGGuess : NSObject
 
-- (id)initWithRandomNumber;
-- (id)initWithTargetNumber:(NSArray *)aTargetNumber;
-- (NSString *) compareGuessNumber:(NSArray *) guess;
-- (int) getGuessTime;
-- (NSString *) getGameMsg;
-- (BOOL) keepGuess;
-- (BOOL) isFinished;
-- (void) reStartGuessGame;
+- (NSString *)compareGuessNumber:(NSArray *) guessNumbers andTargetNumbers:(NSArray *) targetNumbers;
+
 @end
 

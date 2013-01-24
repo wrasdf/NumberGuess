@@ -9,7 +9,6 @@
 
 
 @implementation NGValidation {
-
 }
 
 - (BOOL)isFourDigits:(NSArray *)array {
@@ -36,8 +35,23 @@
     return [array count] == 0;
 }
 
-- (BOOL)guessSuccess :(NSString *)result {
-    return [result isEqual:@"4A0B"];
+- (NSString *)isValid:(NSArray *)array {
+
+    if ([self isEmpty:array]){
+        return @"Please input numbers.";
+    }
+
+    if (![self isFourDigits:array]){
+        return @"You input is not valid. You only could input 4 digal numbers between 0 - 9.";
+    }
+
+    if ([self hasDuplicatedNumber:array]){
+        return @"Please don't input duplicate numbers.";
+    }
+
+    return @"";
+
 }
+
 
 @end
