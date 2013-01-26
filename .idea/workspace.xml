@@ -23,15 +23,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_6.0_1" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="NGUIViewController.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NumberGuess/NGUIViewController.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="14" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="UIWindow.h" pinned="false" current="false" current-in-tab="false">
         <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIWindow.h">
           <provider selected="true" editor-type-id="text-editor">
@@ -48,27 +39,6 @@
               <folding>
                 <element signature="e#128#153#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MTLabel.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NumberGuess/MTLabel.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="502" column="51" selection-start="12015" selection-end="12015" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#640#659#0" expanded="true" />
-                <element signature="e#1235#1253#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MTLabel.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NumberGuess/MTLabel.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="79" column="19" selection-start="3227" selection-end="3227" vertical-scroll-proportion="0.0">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -449,23 +419,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NumberGuess/NGUIViewController.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="14" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIFont.h">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="12" selection-start="295" selection-end="307" vertical-scroll-proportion="0.17175573">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NumberGuess/MTLabel.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="19" selection-start="3227" selection-end="3227" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -489,16 +445,6 @@
         <state line="20" column="52" selection-start="711" selection-end="711" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#128#153#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NumberGuess/MTLabel.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="502" column="51" selection-start="12015" selection-end="12015" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#640#659#0" expanded="true" />
-            <element signature="e#1235#1253#0" expanded="true" />
           </folding>
         </state>
       </provider>
