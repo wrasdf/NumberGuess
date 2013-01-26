@@ -1,4 +1,3 @@
-
 #import "NGNewViewController.h"
 #import "NGMaster.h"
 #import "RandomNumber.h"
@@ -8,12 +7,12 @@
 
 @end
 
-@implementation NGNewViewController{
+@implementation NGNewViewController {
     NGMaster *guessMaster;
     NSMutableArray *convertedArray;
     NSDictionary *guessResult;
     BOOL resetGame;
-    
+
     UIButton *guessButton;
     UILabel *gameTitle;
     UILabel *gameMsg;
@@ -33,66 +32,81 @@
     return self;
 }
 
-- (void) createUI{
-    
+- (void) drawPlaceholderInRect:(CGRect)rect {
+    [[UIColor blueColor] setFill];
+    [[self placeholder] drawInRect:rect withFont:[UIFont systemFontOfSize:16]];
+}
+
+
+- (void)createUI {
+
     // create UI button
     guessButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     guessButton.frame = CGRectMake(110, 350, 100, 30);
-    [guessButton setTitle:@"Click Me!" forState:UIControlStateNormal];
+    [guessButton setTitle:@"Guess" forState:UIControlStateNormal];
     [guessButton addTarget:self action:@selector(guess:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:guessButton];
-    
+
     // create UI input
     guessInput = [[UITextField alloc] initWithFrame:CGRectMake(80, 210, 160, 30)];
-    guessInput.placeholder=@"Enter Guess Numbers";
+    guessInput.placeholder = @"Enter Guess Numbers";
     [guessInput setBackgroundColor:[UIColor whiteColor]];
-    guessInput.font = [UIFont fontWithName:@"GillSans" size:14];
-    guessInput.textAlignment= (NSTextAlignment) UITextAlignmentCenter;
+    gameTitle.font = [UIFont systemFontOfSize:12.0];
+    guessInput.textAlignment = (NSTextAlignment) UITextAlignmentCenter;
+    guessInput.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
     guessInput.layer.borderWidth = 1;
     guessInput.layer.borderColor = [[UIColor grayColor] CGColor];
-    guessInput.layer.cornerRadius=5.0;//Use this if you have added QuartzCore framework
-    guessInput.delegate = self;
+    guessInput.layer.cornerRadius = 5.0;//Use this if you have added QuartzCore framework
+    guessInput.delegate = (id) self;
     [self.view addSubview:guessInput];
 
-    
     //create UI Game Title
-
     gameTitle = [[UILabel alloc] initWithFrame:CGRectMake(10, 80, 300, 30)];
     gameTitle.text = @"Guess Game";
     gameTitle.textColor = [UIColor blueColor];
     gameTitle.font = [UIFont fontWithName:@"Helvetica" size:30];
     gameTitle.shadowColor = [UIColor grayColor];
-    gameTitle.shadowOffset = CGSizeMake(1,1);
+    gameTitle.shadowOffset = CGSizeMake(1, 1);
     gameTitle.textAlignment = (NSTextAlignment) UITextAlignmentCenter;
     gameTitle.lineBreakMode = (NSLineBreakMode) UILineBreakModeWordWrap;
     [self.view addSubview:gameTitle];
-
 
     // create UI Game Result
     gameResult = [[UILabel alloc] initWithFrame:CGRectMake(120, 160, 80, 30)];
     gameResult.text = @"";
     gameResult.font = [UIFont fontWithName:@"Helvetica" size:20];
     gameResult.shadowColor = [UIColor grayColor];
-    gameResult.shadowOffset = CGSizeMake(1,1);
+    gameResult.shadowOffset = CGSizeMake(1, 1);
     gameResult.numberOfLines = 2; // 2 lines ; 0 - dynamical number of lines
     gameResult.textAlignment = (NSTextAlignment) UITextAlignmentCenter;
     [self.view addSubview:gameResult];
-    
+
     // create UI Game Message
-    gameMsg = [[UILabel alloc] initWithFrame:CGRectMake(20, 270, 280, 30)];
+    gameMsg = [[UILabel alloc] initWithFrame:CGRectMake(20, 270, 280, 40)];
     gameMsg.text = @"";
+    gameResult.font = [UIFont fontWithName:@"Helvetica" size:16];
     gameMsg.shadowColor = [UIColor grayColor];
-    gameMsg.shadowOffset = CGSizeMake(1,1);
+    gameMsg.shadowOffset = CGSizeMake(1, 1);
     gameMsg.numberOfLines = 2; // 2 lines ; 0 - dynamical number of lines
-    gameMsg.textAlignment= (NSTextAlignment) UITextAlignmentCenter;
+    gameMsg.textAlignment = (NSTextAlignment) UITextAlignmentCenter;
     [self.view addSubview:gameMsg];
-    
+
+//    CGRect frame = CGRectMake(20, 270, 280, 40);
+//    CGSize labelsize = [gameMsg.text sizeWithFont:[UIFont boldSystemFontOfSize: 16]
+//
+//                                   constrainedToSize:CGSizeMake(320, 44)
+//
+//                                       lineBreakMode:UILineBreakModeTailTruncation];
+//    frame.size.width = labelsize.width;
+//    frame.size.height = labelsize.height;
+//    gameMsg.frame = frame;
 }
 
--(void)viewDidLoad {
+- (void)viewDidLoad {
     [super viewDidLoad];
     [self createUI];
 }
+
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     [guessInput resignFirstResponder];
 }
@@ -142,7 +156,5 @@
     }
 
 }
-
-
 
 @end
