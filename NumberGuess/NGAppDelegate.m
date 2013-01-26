@@ -7,8 +7,8 @@
 //
 
 #import "NGAppDelegate.h"
-#import "NGUIViewController.h"
-#import "QXViewController.h"
+#import "NGNewViewController.h"
+
 @implementation NGAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -17,8 +17,7 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     // add by jacky to connect UI & controller
-    NGUIViewController  *viewController = [[NGUIViewController alloc]initWithNibName:@"NGUIViewController" bundle:nil];
-//    UIViewController  *viewController = [[QXViewController alloc] init];
+    NGNewViewController *viewController = [[NGNewViewController alloc] init];
     self.window.rootViewController = viewController;
     
     [self.window makeKeyAndVisible];
