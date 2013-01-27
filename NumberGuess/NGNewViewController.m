@@ -32,12 +32,6 @@
     return self;
 }
 
-- (void) drawPlaceholderInRect:(CGRect)rect {
-    [[UIColor blueColor] setFill];
-    [[self placeholder] drawInRect:rect withFont:[UIFont systemFontOfSize:16]];
-}
-
-
 - (void)createUI {
 
     // create UI button
@@ -49,7 +43,7 @@
 
     // create UI input
     guessInput = [[UITextField alloc] initWithFrame:CGRectMake(80, 210, 160, 30)];
-    guessInput.placeholder = @"Enter Guess Numbers";
+    guessInput.placeholder = @"Guess Numbers";
     [guessInput setBackgroundColor:[UIColor whiteColor]];
     gameTitle.font = [UIFont systemFontOfSize:12.0];
     guessInput.textAlignment = (NSTextAlignment) UITextAlignmentCenter;

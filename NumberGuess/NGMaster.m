@@ -24,6 +24,7 @@
         targetNumbers = targetArray;
         guessResult = [[NSMutableDictionary alloc] init];
         validation = [[NGValidation alloc] init];
+        randomNumber = [[RandomNumber alloc] init];
     }
     return self;
 }
