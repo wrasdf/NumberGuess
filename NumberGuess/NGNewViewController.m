@@ -43,9 +43,9 @@
 
     // create UI input
     guessInput = [[UITextField alloc] initWithFrame:CGRectMake(80, 210, 160, 30)];
-    guessInput.placeholder = @"Guess Numbers";
+    guessInput.placeholder = @"Guess your Numbers";
     [guessInput setBackgroundColor:[UIColor whiteColor]];
-    gameTitle.font = [UIFont systemFontOfSize:12.0];
+    guessInput.font = [UIFont systemFontOfSize:14];
     guessInput.textAlignment = (NSTextAlignment) UITextAlignmentCenter;
     guessInput.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
     guessInput.layer.borderWidth = 1;
