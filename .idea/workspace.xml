@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/NumberGuess/NGGuess.h" line="12" />
+    <bookmark url="file://$PROJECT_DIR$/NumberGuess/Utility/NGGuess.h" line="12" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c8edf30-9576-47e1-8a1c-6670fcc0b365" name="Default" comment="" />
@@ -23,93 +23,99 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_6.0_1" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="NGNewViewController.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NumberGuess/NGNewViewController.h">
+      <file leaf-file-name="NGGameView.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NumberGuess/GameView/NGGameView.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="29" selection-start="209" selection-end="209" vertical-scroll-proportion="0.0">
+            <state line="12" column="51" selection-start="210" selection-end="229" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NGGuess.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NumberGuess/NGGuess.h">
+      <file leaf-file-name="NGGameViewController.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NumberGuess/GameView/NGGameViewController.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="11" column="0" selection-start="211" selection-end="211" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UIWindow.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIWindow.h">
+      <file leaf-file-name="CreateUIElement.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NumberGuess/Utility/CreateUIElement.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="46" selection-start="3574" selection-end="3574" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NGAppDelegate.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NumberGuess/NGAppDelegate.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NGAppDelegate.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NumberGuess/NGAppDelegate.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="55" selection-start="482" selection-end="533" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RandomNumber.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NumberGuess/RandomNumber.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NGValidation.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NumberGuess/NGValidation.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NGGuess.m" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/NumberGuess/NGGuess.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="43" selection-start="539" selection-end="539" vertical-scroll-proportion="0.601145">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NGMaster.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NumberGuess/NGMaster.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="66" selection-start="807" selection-end="807" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NGNewViewController.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NumberGuess/NGNewViewController.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="56" selection-start="1704" selection-end="1704" vertical-scroll-proportion="0.0">
+            <state line="21" column="67" selection-start="531" selection-end="531" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#0#31#0" expanded="true" />
+                <element signature="e#112#139#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CreateUIElement.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NumberGuess/Utility/CreateUIElement.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="56" selection-start="405" selection-end="405" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NGGameView.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NumberGuess/GameView/NGGameView.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="79" column="35" selection-start="2822" selection-end="2822" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#112#134#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NGSettingView.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NumberGuess/GameSetting/NGSettingView.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="55" selection-start="203" selection-end="203" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UIPickerView.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPickerView.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="81" column="48" selection-start="3352" selection-end="3352" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NGSettingView.m" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/NumberGuess/GameSetting/NGSettingView.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="94" selection-start="638" selection-end="638" vertical-scroll-proportion="0.7442748">
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NGSettingViewController.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NumberGuess/GameSetting/NGSettingViewController.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NGSettingViewController.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NumberGuess/GameSetting/NGSettingViewController.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="27" selection-start="527" selection-end="527" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#112#147#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -125,30 +131,49 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/NumberGuess/NGValidation.h" />
-        <option value="$PROJECT_DIR$/NumberGuess/NGValidation.m" />
-        <option value="$PROJECT_DIR$/NumberGuessTests/NGValidationTest.m" />
-        <option value="$PROJECT_DIR$/NumberGuessTests/NGValidationTest.h" />
-        <option value="$PROJECT_DIR$/NumberGuessTests/NGRandomNumberTest.m" />
-        <option value="$PROJECT_DIR$/NumberGuessTests/NumberGuessTests.m" />
-        <option value="$PROJECT_DIR$/NumberGuess/QXViewController.m" />
-        <option value="$PROJECT_DIR$/NGUIViewController.h" />
-        <option value="$PROJECT_DIR$/NumberGuess/NGUIViewController.h" />
+        <option value="$PROJECT_DIR$/NumberGuess/CreateUIElement.h" />
+        <option value="$PROJECT_DIR$/NumberGuess/NGSettingView.h" />
+        <option value="$PROJECT_DIR$/NumberGuess/Utility.h" />
+        <option value="$PROJECT_DIR$/NumberGuess/Utility.m" />
+        <option value="$PROJECT_DIR$/NumberGuess/NGGameView.h" />
+        <option value="$PROJECT_DIR$/NumberGuess/NGGameViewController.m" />
+        <option value="$PROJECT_DIR$/NumberGuess/NGGameView.m" />
+        <option value="$PROJECT_DIR$/NumberGuess/NGSettingViewController.m" />
+        <option value="$PROJECT_DIR$/NumberGuess/NGSettingView.m" />
         <option value="$PROJECT_DIR$/NumberGuess/NGAppDelegate.m" />
-        <option value="$PROJECT_DIR$/NGUIViewController.m" />
-        <option value="$PROJECT_DIR$/NumberGuess/MTLabel.h" />
-        <option value="$PROJECT_DIR$/NumberGuess/MTLabel.m" />
-        <option value="$PROJECT_DIR$/NumberGuess/NGNewViewController.h" />
-        <option value="$PROJECT_DIR$/NumberGuess/NGMaster.m" />
-        <option value="$PROJECT_DIR$/NumberGuess/NGNewViewController.m" />
+        <option value="$PROJECT_DIR$/NumberGuess/GameSetting/NGSettingViewController.m" />
+        <option value="$PROJECT_DIR$/NumberGuess/Utility/CreateUIElement.h" />
+        <option value="$PROJECT_DIR$/NumberGuess/GameView/NGGameView.m" />
+        <option value="$PROJECT_DIR$/NumberGuess/Utility/CreateUIElement.m" />
+        <option value="$PROJECT_DIR$/NumberGuess/GameSetting/NGSettingView.h" />
+        <option value="$PROJECT_DIR$/NumberGuess/GameSetting/NGSettingView.m" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="4" />
+    <option name="x" value="5" />
     <option name="y" value="22" />
     <option name="width" value="1436" />
     <option name="height" value="878" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>General</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Annotator</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -209,15 +234,15 @@
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.lastSelected" value="preferences.keymap" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/NumberGuess.xcodeproj" />
+    <property name="options.lastSelected" value="preferences.keymap" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../IOSSpike/ChangeView/ChangeView/Utility.m" />
     <property name="FullScreen" value="false" />
-    <property name="OBJC.PRESERVED_TARGET_SELECTION" value="NumberGuessTests" />
-    <property name="GoToClass.includeJavaFiles" value="false" />
-    <property name="options.searchVisible" value="true" />
+    <property name="OBJC.PRESERVED_TARGET_SELECTION" value="NumberGuess" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -351,12 +376,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="4" y="22" width="1436" height="878" extended-state="6" />
+    <frame x="5" y="22" width="1436" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32908162" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32908162" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32908162" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24982308" sideWeight="0.33035713" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22434537" sideWeight="0.7028061" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39923468" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -367,7 +393,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32908162" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -424,40 +449,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <option name="time" value="11" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIColor.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="13" selection-start="1694" selection-end="1694" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIViewController.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="135" column="32" selection-start="1366" selection-end="13852" vertical-scroll-proportion="0.19178082" />
-      </provider>
-    </entry>
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIWindow.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="46" selection-start="3574" selection-end="3574" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIFont.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="12" selection-start="295" selection-end="307" vertical-scroll-proportion="0.17175573" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NumberGuess/main.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="229" selection-end="229" vertical-scroll-proportion="0.3721374" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NumberGuess/NGValidation.m">
+    <entry file="file://$PROJECT_DIR$/NumberGuess/Utility/NGGuess.m">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
@@ -466,27 +462,24 @@
     </entry>
     <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITextField.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="135" column="52" selection-start="4846" selection-end="4859" vertical-scroll-proportion="-1.4951077" />
-      </provider>
-    </entry>
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIInterface.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="62" selection-start="1001" selection-end="1001" vertical-scroll-proportion="0.40076336">
+        <state line="206" column="8" selection-start="9789" selection-end="9789" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NumberGuess/RandomNumber.m">
+    <entry file="file://$PROJECT_DIR$/NumberGuess/Utility/RandomNumber.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="11" column="106" selection-start="213" selection-end="213" vertical-scroll-proportion="0.33066133">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NumberGuess/NGMaster.m">
+    <entry file="file://$PROJECT_DIR$/NumberGuess/NGAppDelegate.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="66" selection-start="807" selection-end="807" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="23" column="35" selection-start="831" selection-end="831" vertical-scroll-proportion="0.30864197">
+          <folding>
+            <element signature="e#128#153#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -497,40 +490,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NumberGuess/NGNewViewController.h">
+    <entry file="file://$PROJECT_DIR$/NumberGuess/GameView/NGGameViewController.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="29" selection-start="209" selection-end="209" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NumberGuess/NGAppDelegate.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="55" selection-start="482" selection-end="533" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NumberGuess/NGNewViewController.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="56" selection-start="1704" selection-end="1704" vertical-scroll-proportion="0.0">
+        <state line="37" column="17" selection-start="910" selection-end="910" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NumberGuess/NGGuess.h">
+    <entry file="file://$PROJECT_DIR$/NumberGuess/GameView/NGGameView.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="51" selection-start="210" selection-end="229" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NumberGuess/Utility/CreateUIElement.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="56" selection-start="405" selection-end="405" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NumberGuess/GameView/NGGameViewController.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="211" selection-end="211" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NumberGuess/GameSetting/NGSettingViewController.h">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NumberGuess/NGGuess.m">
+    <entry file="file://$PROJECT_DIR$/NumberGuess/Utility/CreateUIElement.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="43" selection-start="539" selection-end="539" vertical-scroll-proportion="0.601145">
+        <state line="21" column="67" selection-start="531" selection-end="531" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#112#139#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NumberGuess/GameSetting/NGSettingViewController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="27" selection-start="527" selection-end="527" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#112#147#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NumberGuess/GameView/NGGameView.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="35" selection-start="2822" selection-end="2822" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#112#134#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPickerView.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="48" selection-start="3352" selection-end="3352" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NumberGuess/GameSetting/NGSettingView.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="55" selection-start="203" selection-end="203" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NumberGuess/GameSetting/NGSettingView.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="94" selection-start="638" selection-end="638" vertical-scroll-proportion="0.7442748">
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -7,7 +7,8 @@
 //
 
 #import "NGAppDelegate.h"
-#import "NGNewViewController.h"
+#import "NGGameViewController.h"
+#import "NGSettingViewController.h"
 
 @implementation NGAppDelegate
 
@@ -17,9 +18,13 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     // add by jacky to connect UI & controller
-    NGNewViewController *viewController = [[NGNewViewController alloc] init];
-    self.window.rootViewController = viewController;
-    
+    NGGameViewController *gameViewController = [[NGGameViewController alloc] init];
+    NGSettingViewController *gameSettingController = [[NGSettingViewController alloc] init];
+
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    tabBarController.viewControllers = @[gameViewController, gameSettingController];
+
+    self.window.rootViewController = tabBarController;
     [self.window makeKeyAndVisible];
     return YES;
 }

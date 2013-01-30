@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		368670091B686361753B91D9 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 3686718128A70F896663DF23 /* Utility.m */; };
+		368673E160F56A73140BAE46 /* NGSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36867015663C42524441AFDE /* NGSettingViewController.m */; };
+		36867482D6C16D18586C6A32 /* NGSettingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36867AEF4A9ECA68A426EE09 /* NGSettingView.m */; };
 		368676349118568BA01E2E26 /* NGMaster.m in Sources */ = {isa = PBXBuildFile; fileRef = 368675A2FA8E1B5C67F1CCF1 /* NGMaster.m */; };
 		36867743C8AB561EFF799036 /* NGValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3686766CC7DD44B0B798B822 /* NGValidation.m */; };
+		36867CF6867E281F922AB02E /* CreateUIElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 3686796E439E6E68850FB0CA /* CreateUIElement.m */; };
+		36867D165B02B3D69B629165 /* NGGameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36867F2D346BB4BDFDBE2745 /* NGGameView.m */; };
 		49432069169FC93600069580 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49432068169FC93600069580 /* UIKit.framework */; };
 		4943206B169FC93600069580 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4943206A169FC93600069580 /* Foundation.framework */; };
 		4943206D169FC93600069580 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4943206C169FC93600069580 /* CoreGraphics.framework */; };
@@ -25,7 +30,7 @@
 		49432094169FC93600069580 /* NumberGuessTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 49432093169FC93600069580 /* NumberGuessTests.m */; };
 		4943209F169FCEA100069580 /* NGGuess.m in Sources */ = {isa = PBXBuildFile; fileRef = 4943209E169FCEA100069580 /* NGGuess.m */; };
 		496C3F1F16A3FF2D001D30B5 /* RandomNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 496C3F1E16A3FF2D001D30B5 /* RandomNumber.m */; };
-		49C735C516B28F3C00EC8C66 /* NGNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C735C416B28F3C00EC8C66 /* NGNewViewController.m */; };
+		49C735C516B28F3C00EC8C66 /* NGGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C735C416B28F3C00EC8C66 /* NGGameViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +44,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		36867015663C42524441AFDE /* NGSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGSettingViewController.m; sourceTree = "<group>"; };
+		3686718128A70F896663DF23 /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
+		3686727F864FC884E49A954E /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
+		368673A0B206FE5E77865483 /* NGGameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGGameView.h; sourceTree = "<group>"; };
 		368675A2FA8E1B5C67F1CCF1 /* NGMaster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGMaster.m; sourceTree = "<group>"; };
+		368675E6B3E58550B8E1584F /* NGSettingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGSettingView.h; sourceTree = "<group>"; };
 		3686766CC7DD44B0B798B822 /* NGValidation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGValidation.m; sourceTree = "<group>"; };
+		36867834D6D2C5A0FE339B9B /* NGSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGSettingViewController.h; sourceTree = "<group>"; };
+		3686796E439E6E68850FB0CA /* CreateUIElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateUIElement.m; sourceTree = "<group>"; };
+		36867AEF4A9ECA68A426EE09 /* NGSettingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGSettingView.m; sourceTree = "<group>"; };
 		36867B13348C8B4978283914 /* NGMaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGMaster.h; sourceTree = "<group>"; };
+		36867BAEE035FF828DB01E31 /* CreateUIElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateUIElement.h; sourceTree = "<group>"; };
+		36867F2D346BB4BDFDBE2745 /* NGGameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGGameView.m; sourceTree = "<group>"; };
 		36867F79E31EF46171054F52 /* NGValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGValidation.h; sourceTree = "<group>"; };
 		49432064169FC93600069580 /* NumberGuess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NumberGuess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49432068169FC93600069580 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -66,8 +81,8 @@
 		4943209E169FCEA100069580 /* NGGuess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGGuess.m; sourceTree = "<group>"; };
 		496C3F1D16A3FF2D001D30B5 /* RandomNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomNumber.h; sourceTree = "<group>"; };
 		496C3F1E16A3FF2D001D30B5 /* RandomNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RandomNumber.m; sourceTree = "<group>"; };
-		49C735C316B28F3C00EC8C66 /* NGNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGNewViewController.h; sourceTree = "<group>"; };
-		49C735C416B28F3C00EC8C66 /* NGNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGNewViewController.m; sourceTree = "<group>"; };
+		49C735C316B28F3C00EC8C66 /* NGGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGGameViewController.h; sourceTree = "<group>"; };
+		49C735C416B28F3C00EC8C66 /* NGGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGGameViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +109,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3686758AE1EEDDF845D12779 /* GameSetting */ = {
+			isa = PBXGroup;
+			children = (
+				368675E6B3E58550B8E1584F /* NGSettingView.h */,
+				36867AEF4A9ECA68A426EE09 /* NGSettingView.m */,
+				36867834D6D2C5A0FE339B9B /* NGSettingViewController.h */,
+				36867015663C42524441AFDE /* NGSettingViewController.m */,
+			);
+			path = GameSetting;
+			sourceTree = "<group>";
+		};
+		36867DED9932F1B59BEE5D82 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				36867F79E31EF46171054F52 /* NGValidation.h */,
+				3686766CC7DD44B0B798B822 /* NGValidation.m */,
+				496C3F1D16A3FF2D001D30B5 /* RandomNumber.h */,
+				496C3F1E16A3FF2D001D30B5 /* RandomNumber.m */,
+				3686727F864FC884E49A954E /* Utility.h */,
+				3686718128A70F896663DF23 /* Utility.m */,
+				36867BAEE035FF828DB01E31 /* CreateUIElement.h */,
+				3686796E439E6E68850FB0CA /* CreateUIElement.m */,
+				4943209D169FCEA100069580 /* NGGuess.h */,
+				4943209E169FCEA100069580 /* NGGuess.m */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		36867EC280797FF954FDF150 /* GameView */ = {
+			isa = PBXGroup;
+			children = (
+				368673A0B206FE5E77865483 /* NGGameView.h */,
+				36867F2D346BB4BDFDBE2745 /* NGGameView.m */,
+				49C735C316B28F3C00EC8C66 /* NGGameViewController.h */,
+				49C735C416B28F3C00EC8C66 /* NGGameViewController.m */,
+			);
+			path = GameView;
+			sourceTree = "<group>";
+		};
 		49432059169FC93500069580 = {
 			isa = PBXGroup;
 			children = (
@@ -130,16 +184,11 @@
 				49432077169FC93600069580 /* NGAppDelegate.h */,
 				49432078169FC93600069580 /* NGAppDelegate.m */,
 				4943206F169FC93600069580 /* Supporting Files */,
-				4943209D169FCEA100069580 /* NGGuess.h */,
-				4943209E169FCEA100069580 /* NGGuess.m */,
-				496C3F1D16A3FF2D001D30B5 /* RandomNumber.h */,
-				496C3F1E16A3FF2D001D30B5 /* RandomNumber.m */,
-				3686766CC7DD44B0B798B822 /* NGValidation.m */,
-				36867F79E31EF46171054F52 /* NGValidation.h */,
 				368675A2FA8E1B5C67F1CCF1 /* NGMaster.m */,
 				36867B13348C8B4978283914 /* NGMaster.h */,
-				49C735C316B28F3C00EC8C66 /* NGNewViewController.h */,
-				49C735C416B28F3C00EC8C66 /* NGNewViewController.m */,
+				36867EC280797FF954FDF150 /* GameView */,
+				3686758AE1EEDDF845D12779 /* GameSetting */,
+				36867DED9932F1B59BEE5D82 /* Utility */,
 			);
 			path = NumberGuess;
 			sourceTree = "<group>";
@@ -293,7 +342,12 @@
 				496C3F1F16A3FF2D001D30B5 /* RandomNumber.m in Sources */,
 				36867743C8AB561EFF799036 /* NGValidation.m in Sources */,
 				368676349118568BA01E2E26 /* NGMaster.m in Sources */,
-				49C735C516B28F3C00EC8C66 /* NGNewViewController.m in Sources */,
+				49C735C516B28F3C00EC8C66 /* NGGameViewController.m in Sources */,
+				368673E160F56A73140BAE46 /* NGSettingViewController.m in Sources */,
+				36867CF6867E281F922AB02E /* CreateUIElement.m in Sources */,
+				36867482D6C16D18586C6A32 /* NGSettingView.m in Sources */,
+				36867D165B02B3D69B629165 /* NGGameView.m in Sources */,
+				368670091B686361753B91D9 /* Utility.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

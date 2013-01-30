@@ -1,5 +1,5 @@
 //
-//  NGNewViewController.h
+//  NGGameViewController.h
 //  NumberGuess
 //
 //  Created by twer on 1/25/13.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NGNewViewController : UIViewController
+@interface NGGameViewController : UIViewController
 
 
 @end
