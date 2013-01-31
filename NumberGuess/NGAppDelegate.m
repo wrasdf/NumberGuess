@@ -8,7 +8,8 @@
 
 #import "NGAppDelegate.h"
 #import "NGGameViewController.h"
-#import "NGSettingViewController.h"
+#import "NGSettingsNavigationController.h"
+#import "NGSettingsHomeController.h"
 
 @implementation NGAppDelegate
 
@@ -18,15 +19,32 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     // add by jacky to connect UI & controller
+
     NGGameViewController *gameViewController = [[NGGameViewController alloc] init];
-    NGSettingViewController *gameSettingController = [[NGSettingViewController alloc] init];
+    UITabBarItem *gameTab = [[UITabBarItem alloc] initWithTitle:@"Games" image:[UIImage imageNamed:@"11.png"] tag:1];
+    [gameViewController setTabBarItem:gameTab];
+
+    NGSettingsNavigationController *settingsNavigationController = [[NGSettingsNavigationController alloc] init];
+    UITabBarItem *settingsTab = [[UITabBarItem alloc] initWithTitle:@"Settings" image:[UIImage imageNamed:@"12.png"] tag:2];
+    [settingsNavigationController setTabBarItem:settingsTab];
+
 
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
-    tabBarController.viewControllers = @[gameViewController, gameSettingController];
+    tabBarController.viewControllers = @[gameViewController, settingsNavigationController];
+
+    [self customizeInterface];
 
     self.window.rootViewController = tabBarController;
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+
+- (void)customizeInterface
+{
+    UIImage* tabBarBackground = [UIImage imageNamed:@"tabbar.png"];
+    [[UITabBar appearance] setBackgroundImage:tabBarBackground];
+    [[UITabBar appearance] setSelectionIndicatorImage:[UIImage imageNamed:@"selection-tab.png"]];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

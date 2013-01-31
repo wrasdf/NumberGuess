@@ -12,7 +12,7 @@
 
 @interface NGGameView : UIView <UITextFieldDelegate>
 
-@property(nonatomic, strong) NGGameViewController *delegte;
+@property(nonatomic, strong) NGGameViewController *delegate;
 
 - (NSString *) getInputText;
 - (void) setGuessButtonText:(NSString *)text;

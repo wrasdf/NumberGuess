@@ -38,12 +38,12 @@
     [self addSubview:gameTitle];
 
     // create UI button
-    guessButton = [[CreateUIElement alloc] createButtonWithCGRect:CGRectMake(110, 330, 100, 30) andWithTitle:@"Guess"];
-    [guessButton addTarget:_delegte action:@selector(guess:) forControlEvents:UIControlEventTouchUpInside];
+    guessButton = [[CreateUIElement alloc] createButtonWithCGRect:CGRectMake(50, 330, 220, 40) andWithTitle:@"Guess"];
+    [guessButton addTarget:_delegate action:@selector(guess:) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:guessButton];
 
     // create UI input
-    guessInput = [[CreateUIElement alloc] createTextFieldWithCGRect:CGRectMake(80, 190, 160, 30)];
+    guessInput = [[CreateUIElement alloc] createTextFieldWithCGRect:CGRectMake(50, 190, 220, 40)];
     guessInput.placeholder = @"Guess your Numbers";
     guessInput.delegate = self;
     [self addSubview:guessInput];

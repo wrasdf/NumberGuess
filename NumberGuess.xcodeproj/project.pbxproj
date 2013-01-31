@@ -8,12 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		368670091B686361753B91D9 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 3686718128A70F896663DF23 /* Utility.m */; };
-		368673E160F56A73140BAE46 /* NGSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36867015663C42524441AFDE /* NGSettingViewController.m */; };
-		36867482D6C16D18586C6A32 /* NGSettingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36867AEF4A9ECA68A426EE09 /* NGSettingView.m */; };
+		36867068F5B9C9EB3D658173 /* NGSetGuessTimesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36867C6030DFE53A55B9DDA2 /* NGSetGuessTimesView.m */; };
+		3686736E6518477D65385309 /* 12.png in Resources */ = {isa = PBXBuildFile; fileRef = 36867A551206BBEFF6D96891 /* 12.png */; };
+		368673A9A98D971E84894A54 /* NGSetGuessTimesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36867032A695AB5CA5E1539F /* NGSetGuessTimesController.m */; };
+		368673E160F56A73140BAE46 /* NGSettingsHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36867015663C42524441AFDE /* NGSettingsHomeController.m */; };
+		3686747152930603AFCA9C99 /* NGSetLevelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36867EAD9C82BCD77AA437EF /* NGSetLevelController.m */; };
+		36867482D6C16D18586C6A32 /* NGSettingsHomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36867AEF4A9ECA68A426EE09 /* NGSettingsHomeView.m */; };
+		36867518726845DF6E7B7EB0 /* NGSetLevelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36867F7011868846277045FE /* NGSetLevelView.m */; };
+		368675B4753111AA919FEB79 /* tabbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 36867228D0D5B5C0A65A1596 /* tabbar.png */; };
+		368675FFFB517A6D7D8643BD /* selection-tab.png in Resources */ = {isa = PBXBuildFile; fileRef = 3686787BBFF8D4EB072108D3 /* selection-tab.png */; };
+		36867627820E7AE81ED3A7A4 /* tabbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36867B58DE1B04484ABE7FE2 /* tabbar@2x.png */; };
 		368676349118568BA01E2E26 /* NGMaster.m in Sources */ = {isa = PBXBuildFile; fileRef = 368675A2FA8E1B5C67F1CCF1 /* NGMaster.m */; };
 		36867743C8AB561EFF799036 /* NGValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3686766CC7DD44B0B798B822 /* NGValidation.m */; };
+		36867C928E579B9C0C4A22A4 /* NGSettingsNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3686746D695F59112C53074F /* NGSettingsNavigationController.m */; };
 		36867CF6867E281F922AB02E /* CreateUIElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 3686796E439E6E68850FB0CA /* CreateUIElement.m */; };
 		36867D165B02B3D69B629165 /* NGGameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36867F2D346BB4BDFDBE2745 /* NGGameView.m */; };
+		36867D5D3FD09FD545EF6520 /* 11.png in Resources */ = {isa = PBXBuildFile; fileRef = 36867DEDACFE5B5166CE0709 /* 11.png */; };
+		36867FB87CFE9DEC402F0252 /* selection-tab@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 368670BFB4D4981C253B7E73 /* selection-tab@2x.png */; };
 		49432069169FC93600069580 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49432068169FC93600069580 /* UIKit.framework */; };
 		4943206B169FC93600069580 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4943206A169FC93600069580 /* Foundation.framework */; };
 		4943206D169FC93600069580 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4943206C169FC93600069580 /* CoreGraphics.framework */; };
@@ -44,19 +55,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		36867015663C42524441AFDE /* NGSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGSettingViewController.m; sourceTree = "<group>"; };
+		36867015663C42524441AFDE /* NGSettingsHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGSettingsHomeController.m; sourceTree = "<group>"; };
+		36867032A695AB5CA5E1539F /* NGSetGuessTimesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGSetGuessTimesController.m; sourceTree = "<group>"; };
+		368670BFB4D4981C253B7E73 /* selection-tab@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "selection-tab@2x.png"; sourceTree = "<group>"; };
 		3686718128A70F896663DF23 /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
+		36867228D0D5B5C0A65A1596 /* tabbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar.png; sourceTree = "<group>"; };
 		3686727F864FC884E49A954E /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
+		36867350B544807CEFDFE64C /* NGSetGuessTimesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGSetGuessTimesController.h; sourceTree = "<group>"; };
 		368673A0B206FE5E77865483 /* NGGameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGGameView.h; sourceTree = "<group>"; };
+		3686746D695F59112C53074F /* NGSettingsNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGSettingsNavigationController.m; sourceTree = "<group>"; };
 		368675A2FA8E1B5C67F1CCF1 /* NGMaster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGMaster.m; sourceTree = "<group>"; };
-		368675E6B3E58550B8E1584F /* NGSettingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGSettingView.h; sourceTree = "<group>"; };
+		368675E6B3E58550B8E1584F /* NGSettingsHomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGSettingsHomeView.h; sourceTree = "<group>"; };
 		3686766CC7DD44B0B798B822 /* NGValidation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGValidation.m; sourceTree = "<group>"; };
-		36867834D6D2C5A0FE339B9B /* NGSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGSettingViewController.h; sourceTree = "<group>"; };
+		3686779B1E7AF8C519B2255B /* NGSettingsNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGSettingsNavigationController.h; sourceTree = "<group>"; };
+		36867834D6D2C5A0FE339B9B /* NGSettingsHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGSettingsHomeController.h; sourceTree = "<group>"; };
+		3686787BBFF8D4EB072108D3 /* selection-tab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "selection-tab.png"; sourceTree = "<group>"; };
 		3686796E439E6E68850FB0CA /* CreateUIElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateUIElement.m; sourceTree = "<group>"; };
-		36867AEF4A9ECA68A426EE09 /* NGSettingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGSettingView.m; sourceTree = "<group>"; };
+		36867A551206BBEFF6D96891 /* 12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 12.png; sourceTree = "<group>"; };
+		36867AEF4A9ECA68A426EE09 /* NGSettingsHomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGSettingsHomeView.m; sourceTree = "<group>"; };
 		36867B13348C8B4978283914 /* NGMaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGMaster.h; sourceTree = "<group>"; };
+		36867B241F328E4CC14993AB /* NGSetLevelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGSetLevelView.h; sourceTree = "<group>"; };
+		36867B58DE1B04484ABE7FE2 /* tabbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar@2x.png"; sourceTree = "<group>"; };
 		36867BAEE035FF828DB01E31 /* CreateUIElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateUIElement.h; sourceTree = "<group>"; };
+		36867C6030DFE53A55B9DDA2 /* NGSetGuessTimesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGSetGuessTimesView.m; sourceTree = "<group>"; };
+		36867DEDACFE5B5166CE0709 /* 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 11.png; sourceTree = "<group>"; };
+		36867E55E4D509E8C8603007 /* NGSetLevelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGSetLevelController.h; sourceTree = "<group>"; };
+		36867EAD9C82BCD77AA437EF /* NGSetLevelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGSetLevelController.m; sourceTree = "<group>"; };
+		36867F1F2C50096E351D6D61 /* NGSetGuessTimesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGSetGuessTimesView.h; sourceTree = "<group>"; };
 		36867F2D346BB4BDFDBE2745 /* NGGameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGGameView.m; sourceTree = "<group>"; };
+		36867F7011868846277045FE /* NGSetLevelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGSetLevelView.m; sourceTree = "<group>"; };
 		36867F79E31EF46171054F52 /* NGValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGValidation.h; sourceTree = "<group>"; };
 		49432064169FC93600069580 /* NumberGuess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NumberGuess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49432068169FC93600069580 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -109,13 +136,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36867067F579D9CD82431001 /* level */ = {
+			isa = PBXGroup;
+			children = (
+				36867E55E4D509E8C8603007 /* NGSetLevelController.h */,
+				36867EAD9C82BCD77AA437EF /* NGSetLevelController.m */,
+				36867B241F328E4CC14993AB /* NGSetLevelView.h */,
+				36867F7011868846277045FE /* NGSetLevelView.m */,
+			);
+			path = level;
+			sourceTree = "<group>";
+		};
+		368674517DF67ACFCA028A64 /* settingHome */ = {
+			isa = PBXGroup;
+			children = (
+				36867834D6D2C5A0FE339B9B /* NGSettingsHomeController.h */,
+				36867015663C42524441AFDE /* NGSettingsHomeController.m */,
+				368675E6B3E58550B8E1584F /* NGSettingsHomeView.h */,
+				36867AEF4A9ECA68A426EE09 /* NGSettingsHomeView.m */,
+			);
+			lastKnownFileType = text;
+			path = settingHome;
+			sourceTree = "<group>";
+		};
 		3686758AE1EEDDF845D12779 /* GameSetting */ = {
 			isa = PBXGroup;
 			children = (
-				368675E6B3E58550B8E1584F /* NGSettingView.h */,
-				36867AEF4A9ECA68A426EE09 /* NGSettingView.m */,
-				36867834D6D2C5A0FE339B9B /* NGSettingViewController.h */,
-				36867015663C42524441AFDE /* NGSettingViewController.m */,
+				3686746D695F59112C53074F /* NGSettingsNavigationController.m */,
+				3686779B1E7AF8C519B2255B /* NGSettingsNavigationController.h */,
+				36867067F579D9CD82431001 /* level */,
+				36867E5C89671A7698D94D6C /* count */,
+				368674517DF67ACFCA028A64 /* settingHome */,
 			);
 			path = GameSetting;
 			sourceTree = "<group>";
@@ -135,6 +186,17 @@
 				4943209E169FCEA100069580 /* NGGuess.m */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		36867E5C89671A7698D94D6C /* count */ = {
+			isa = PBXGroup;
+			children = (
+				36867350B544807CEFDFE64C /* NGSetGuessTimesController.h */,
+				36867032A695AB5CA5E1539F /* NGSetGuessTimesController.m */,
+				36867F1F2C50096E351D6D61 /* NGSetGuessTimesView.h */,
+				36867C6030DFE53A55B9DDA2 /* NGSetGuessTimesView.m */,
+			);
+			path = count;
 			sourceTree = "<group>";
 		};
 		36867EC280797FF954FDF150 /* GameView */ = {
@@ -189,6 +251,10 @@
 				36867EC280797FF954FDF150 /* GameView */,
 				3686758AE1EEDDF845D12779 /* GameSetting */,
 				36867DED9932F1B59BEE5D82 /* Utility */,
+				3686787BBFF8D4EB072108D3 /* selection-tab.png */,
+				368670BFB4D4981C253B7E73 /* selection-tab@2x.png */,
+				36867228D0D5B5C0A65A1596 /* tabbar.png */,
+				36867B58DE1B04484ABE7FE2 /* tabbar@2x.png */,
 			);
 			path = NumberGuess;
 			sourceTree = "<group>";
@@ -203,6 +269,8 @@
 				4943207A169FC93600069580 /* Default.png */,
 				4943207C169FC93600069580 /* Default@2x.png */,
 				4943207E169FC93600069580 /* Default-568h@2x.png */,
+				36867DEDACFE5B5166CE0709 /* 11.png */,
+				36867A551206BBEFF6D96891 /* 12.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -302,6 +370,12 @@
 				4943207B169FC93600069580 /* Default.png in Resources */,
 				4943207D169FC93600069580 /* Default@2x.png in Resources */,
 				4943207F169FC93600069580 /* Default-568h@2x.png in Resources */,
+				36867D5D3FD09FD545EF6520 /* 11.png in Resources */,
+				3686736E6518477D65385309 /* 12.png in Resources */,
+				368675FFFB517A6D7D8643BD /* selection-tab.png in Resources */,
+				36867FB87CFE9DEC402F0252 /* selection-tab@2x.png in Resources */,
+				368675B4753111AA919FEB79 /* tabbar.png in Resources */,
+				36867627820E7AE81ED3A7A4 /* tabbar@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,11 +417,16 @@
 				36867743C8AB561EFF799036 /* NGValidation.m in Sources */,
 				368676349118568BA01E2E26 /* NGMaster.m in Sources */,
 				49C735C516B28F3C00EC8C66 /* NGGameViewController.m in Sources */,
-				368673E160F56A73140BAE46 /* NGSettingViewController.m in Sources */,
+				368673E160F56A73140BAE46 /* NGSettingsHomeController.m in Sources */,
 				36867CF6867E281F922AB02E /* CreateUIElement.m in Sources */,
-				36867482D6C16D18586C6A32 /* NGSettingView.m in Sources */,
+				36867482D6C16D18586C6A32 /* NGSettingsHomeView.m in Sources */,
 				36867D165B02B3D69B629165 /* NGGameView.m in Sources */,
 				368670091B686361753B91D9 /* Utility.m in Sources */,
+				36867C928E579B9C0C4A22A4 /* NGSettingsNavigationController.m in Sources */,
+				3686747152930603AFCA9C99 /* NGSetLevelController.m in Sources */,
+				368673A9A98D971E84894A54 /* NGSetGuessTimesController.m in Sources */,
+				36867068F5B9C9EB3D658173 /* NGSetGuessTimesView.m in Sources */,
+				36867518726845DF6E7B7EB0 /* NGSetLevelView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

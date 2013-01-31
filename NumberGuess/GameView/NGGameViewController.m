@@ -29,7 +29,7 @@
 
 - (void)loadView {
     gameView = [[NGGameView alloc] initWithFrame:CGRectMake(0, 0, 320, [UIScreen mainScreen].bounds.size.height - 49)];
-    gameView.delegte = self;
+    gameView.delegate = self;
     self.view = gameView;
 }
 
