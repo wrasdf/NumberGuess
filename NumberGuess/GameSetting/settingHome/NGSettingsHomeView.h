@@ -9,5 +9,5 @@
 
 
 @interface NGSettingsHomeView : UIView <UITextFieldDelegate>
-
+@property(nonatomic, strong) UIButton *gameLevelButton;
 @end

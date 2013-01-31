@@ -7,6 +7,7 @@
 
 #import "NGSettingsHomeController.h"
 #import "NGSettingsHomeView.h"
+#import "NGSetLevelController.h"
 
 @implementation NGSettingsHomeController {
 
@@ -21,22 +22,19 @@
 }
 
 - (void)loadView {
-
     NGSettingsHomeView *settingHomeView = [[NGSettingsHomeView alloc] initWithFrame:CGRectMake(0, 0, 320, [UIScreen mainScreen].bounds.size.height - 49)];
     self.view = settingHomeView;
+    [settingHomeView.gameLevelButton addTarget:self action:@selector(click:) forControlEvents:UIControlEventTouchUpInside];
+}
 
-//    [settingHomeView.button addTarget: ]
-
-//    levelController = [[NGSetLevelController alloc] init]
-//    [self.navigationController pushViewController:levelController animated:YES];
-
+- (void)click:(id)sender {
+    NGSetLevelController *controller = [[NGSetLevelController alloc] init];
+    [self.navigationController pushViewController:controller animated:YES];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 }
-
-
 
 
 @end
