@@ -7,7 +7,11 @@
 
 #import <Foundation/Foundation.h>
 
+@protocol NGSettingsHomeDelegate <NSObject>
+- (void)changeViewToSetGuessTimes:(id)sender;
+- (void)click:(id)sender;
+@end
 
 @interface NGSettingsHomeView : UIView <UITextFieldDelegate>
-@property(nonatomic, strong) UIButton *gameLevelButton;
+@property(nonatomic, strong) id <NGSettingsHomeDelegate> delegate;
 @end

@@ -25,7 +25,7 @@
     [levelDataArray addObject:@"Hard"];
 
     levelPickerView = [[UIPickerView alloc] init];
-//    [levelPickerView setDataSource:self];
+    [levelPickerView setDataSource:self];
     [levelPickerView setDelegate:self];
 
     [levelPickerView setFrame:CGRectMake(10, 50, 300, 162)];
@@ -55,12 +55,12 @@
 
 // Display each row's data.
 -(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
-    return [levelDataArray objectAtIndex:row];
+    return [levelDataArray objectAtIndex:(NSUInteger) row];
 }
 
 // Do something with the selected row.
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
-    NSLog(@"You selected this: %@", [levelDataArray objectAtIndex:row]);
+    NSLog(@"You selected this: %@", [levelDataArray objectAtIndex:(NSUInteger) row]);
 }
 
 @end

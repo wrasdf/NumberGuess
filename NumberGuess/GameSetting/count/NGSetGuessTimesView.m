@@ -38,7 +38,7 @@
     [countDataArray addObject:@"10"];
 
     timesPickerView = [[UIPickerView alloc] init];
-//    [levelPickerView setDataSource:self];
+    [timesPickerView setDataSource:self];
     [timesPickerView setDelegate:self];
 
     [timesPickerView setFrame:CGRectMake(10, 50, 300, 162)];
@@ -52,5 +52,24 @@
     [self createUIPicker];
 }
 
+
+-(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
+    return 1;
+}
+
+// Total rows in our component.
+-(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
+    return [countDataArray count];
+}
+
+// Display each row's data.
+-(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
+    return [countDataArray objectAtIndex:(NSUInteger) row];
+}
+
+// Do something with the selected row.
+-(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
+    NSLog(@"You selected this: %@", [countDataArray objectAtIndex:(NSUInteger) row]);
+}
 
 @end

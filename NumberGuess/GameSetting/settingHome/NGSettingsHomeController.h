@@ -6,7 +6,8 @@
 
 
 #import <Foundation/Foundation.h>
+#import "NGSettingsHomeView.h"
 
 
-@interface NGSettingsHomeController : UIViewController
+@interface NGSettingsHomeController : UIViewController<NGSettingsHomeDelegate>
 @end

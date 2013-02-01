@@ -8,5 +8,5 @@
 #import <Foundation/Foundation.h>
 
 
-@interface NGSetGuessTimesView : UIView
+@interface NGSetGuessTimesView : UIView<UIPickerViewDataSource, UIPickerViewDelegate>
 @end

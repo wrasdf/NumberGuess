@@ -20,7 +20,7 @@
 		36867627820E7AE81ED3A7A4 /* tabbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36867B58DE1B04484ABE7FE2 /* tabbar@2x.png */; };
 		368676349118568BA01E2E26 /* NGMaster.m in Sources */ = {isa = PBXBuildFile; fileRef = 368675A2FA8E1B5C67F1CCF1 /* NGMaster.m */; };
 		36867743C8AB561EFF799036 /* NGValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3686766CC7DD44B0B798B822 /* NGValidation.m */; };
-		36867C928E579B9C0C4A22A4 /* NGSettingsNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3686746D695F59112C53074F /* NGSettingsNavigationController.m */; };
+		36867C8B82EB7EC5A677EE50 /* NGLevelPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 36867FCBD06ABC3BE50C17DB /* NGLevelPicker.m */; };
 		36867CF6867E281F922AB02E /* CreateUIElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 3686796E439E6E68850FB0CA /* CreateUIElement.m */; };
 		36867D165B02B3D69B629165 /* NGGameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36867F2D346BB4BDFDBE2745 /* NGGameView.m */; };
 		36867D5D3FD09FD545EF6520 /* 11.png in Resources */ = {isa = PBXBuildFile; fileRef = 36867DEDACFE5B5166CE0709 /* 11.png */; };
@@ -63,11 +63,10 @@
 		3686727F864FC884E49A954E /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
 		36867350B544807CEFDFE64C /* NGSetGuessTimesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGSetGuessTimesController.h; sourceTree = "<group>"; };
 		368673A0B206FE5E77865483 /* NGGameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGGameView.h; sourceTree = "<group>"; };
-		3686746D695F59112C53074F /* NGSettingsNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGSettingsNavigationController.m; sourceTree = "<group>"; };
+		368674CF3744C8F456E5D076 /* NGLevelPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGLevelPicker.h; sourceTree = "<group>"; };
 		368675A2FA8E1B5C67F1CCF1 /* NGMaster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGMaster.m; sourceTree = "<group>"; };
 		368675E6B3E58550B8E1584F /* NGSettingsHomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGSettingsHomeView.h; sourceTree = "<group>"; };
 		3686766CC7DD44B0B798B822 /* NGValidation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGValidation.m; sourceTree = "<group>"; };
-		3686779B1E7AF8C519B2255B /* NGSettingsNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGSettingsNavigationController.h; sourceTree = "<group>"; };
 		36867834D6D2C5A0FE339B9B /* NGSettingsHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGSettingsHomeController.h; sourceTree = "<group>"; };
 		3686787BBFF8D4EB072108D3 /* selection-tab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "selection-tab.png"; sourceTree = "<group>"; };
 		3686796E439E6E68850FB0CA /* CreateUIElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateUIElement.m; sourceTree = "<group>"; };
@@ -85,6 +84,7 @@
 		36867F2D346BB4BDFDBE2745 /* NGGameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGGameView.m; sourceTree = "<group>"; };
 		36867F7011868846277045FE /* NGSetLevelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGSetLevelView.m; sourceTree = "<group>"; };
 		36867F79E31EF46171054F52 /* NGValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGValidation.h; sourceTree = "<group>"; };
+		36867FCBD06ABC3BE50C17DB /* NGLevelPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGLevelPicker.m; sourceTree = "<group>"; };
 		49432064169FC93600069580 /* NumberGuess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NumberGuess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49432068169FC93600069580 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4943206A169FC93600069580 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -143,6 +143,8 @@
 				36867EAD9C82BCD77AA437EF /* NGSetLevelController.m */,
 				36867B241F328E4CC14993AB /* NGSetLevelView.h */,
 				36867F7011868846277045FE /* NGSetLevelView.m */,
+				36867FCBD06ABC3BE50C17DB /* NGLevelPicker.m */,
+				368674CF3744C8F456E5D076 /* NGLevelPicker.h */,
 			);
 			path = level;
 			sourceTree = "<group>";
@@ -162,8 +164,6 @@
 		3686758AE1EEDDF845D12779 /* GameSetting */ = {
 			isa = PBXGroup;
 			children = (
-				3686746D695F59112C53074F /* NGSettingsNavigationController.m */,
-				3686779B1E7AF8C519B2255B /* NGSettingsNavigationController.h */,
 				36867067F579D9CD82431001 /* level */,
 				36867E5C89671A7698D94D6C /* count */,
 				368674517DF67ACFCA028A64 /* settingHome */,
@@ -422,11 +422,11 @@
 				36867482D6C16D18586C6A32 /* NGSettingsHomeView.m in Sources */,
 				36867D165B02B3D69B629165 /* NGGameView.m in Sources */,
 				368670091B686361753B91D9 /* Utility.m in Sources */,
-				36867C928E579B9C0C4A22A4 /* NGSettingsNavigationController.m in Sources */,
 				3686747152930603AFCA9C99 /* NGSetLevelController.m in Sources */,
 				368673A9A98D971E84894A54 /* NGSetGuessTimesController.m in Sources */,
 				36867068F5B9C9EB3D658173 /* NGSetGuessTimesView.m in Sources */,
 				36867518726845DF6E7B7EB0 /* NGSetLevelView.m in Sources */,
+				36867C8B82EB7EC5A677EE50 /* NGLevelPicker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,7 +8,6 @@
 
 #import "NGAppDelegate.h"
 #import "NGGameViewController.h"
-#import "NGSettingsNavigationController.h"
 #import "NGSettingsHomeController.h"
 
 @implementation NGAppDelegate
@@ -24,7 +23,7 @@
     UITabBarItem *gameTab = [[UITabBarItem alloc] initWithTitle:@"Games" image:[UIImage imageNamed:@"11.png"] tag:1];
     [gameViewController setTabBarItem:gameTab];
 
-    NGSettingsNavigationController *settingsNavigationController = [[NGSettingsNavigationController alloc] init];
+    UINavigationController *settingsNavigationController = [[UINavigationController alloc] initWithRootViewController:[[NGSettingsHomeController alloc] init]];
     UITabBarItem *settingsTab = [[UITabBarItem alloc] initWithTitle:@"Settings" image:[UIImage imageNamed:@"12.png"] tag:2];
     [settingsNavigationController setTabBarItem:settingsTab];
 

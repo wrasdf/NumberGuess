@@ -8,5 +8,8 @@
 #import <Foundation/Foundation.h>
 
 
-@interface NGSetLevelView : UIView
+@interface NGSetLevelView : UIView <UIPickerViewDelegate,UIPickerViewDataSource>
+
+@property (nonatomic, strong) UIPickerView *levelPicker;
+
 @end
