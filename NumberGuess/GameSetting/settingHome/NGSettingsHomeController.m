@@ -16,7 +16,7 @@
 - (id)init {
     self = [super init];
     if (self) {
-        self.title = @"Game Setting";
+        self.title = @"Settings";
     }
     return self;
 }
@@ -24,10 +24,10 @@
 - (void)loadView {
     NGSettingsHomeView *settingHomeView = [[NGSettingsHomeView alloc] initWithFrame:CGRectMake(0, 0, 320, [UIScreen mainScreen].bounds.size.height - 49)];
     self.view = settingHomeView;
-    settingHomeView.delegate = self;
+    settingHomeView.target = self;
 }
 
-- (void)click:(id)sender {
+- (void)changeViewToSetLevel:(id)sender {
     NGSetLevelController *controller = [[NGSetLevelController alloc] init];
     [self.navigationController pushViewController:controller animated:YES];
 }

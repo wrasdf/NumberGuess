@@ -15,7 +15,7 @@
 - (id)init {
     self = [super init];
     if (self) {
-
+        self.title = @"Guess Times";
     }
 
     return self;

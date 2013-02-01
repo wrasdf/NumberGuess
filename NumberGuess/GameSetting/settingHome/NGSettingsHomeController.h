@@ -9,5 +9,5 @@
 #import "NGSettingsHomeView.h"
 
 
-@interface NGSettingsHomeController : UIViewController<NGSettingsHomeDelegate>
+@interface NGSettingsHomeController : UIViewController
 @end
