@@ -7,9 +7,12 @@
 
 #import <Foundation/Foundation.h>
 
+@class NGLevelPicker;
 
-@interface NGSetLevelView : UIView <UIPickerViewDelegate,UIPickerViewDataSource>
 
-@property (nonatomic, strong) UIPickerView *levelPicker;
+@interface NGSetLevelView : UIView
+
+- (id)initWithDelegate:(NGLevelPicker *)delegatePicker andWithFrame:(CGRect)rect;
+
 
 @end

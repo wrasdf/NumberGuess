@@ -8,5 +8,6 @@
 #import <Foundation/Foundation.h>
 
 
-@interface NGLevelPicker : NSObject
+@interface NGLevelPicker : NSObject <UIPickerViewDelegate,UIPickerViewDataSource>
+- (void)setPickerLogicWith:(UIPickerView *) picker;
 @end

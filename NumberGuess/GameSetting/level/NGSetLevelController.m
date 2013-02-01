@@ -7,6 +7,7 @@
 
 #import "NGSetLevelController.h"
 #import "NGSetLevelView.h"
+#import "NGLevelPicker.h"
 
 
 @implementation NGSetLevelController {
@@ -16,6 +17,7 @@
     self = [super init];
     if (self) {
         self.title = @"Levels";
+        NGLevelPicker *picker = [[NGLevelPicker alloc] init];
     }
 
     return self;
@@ -23,9 +25,8 @@
 
 
 - (void)loadView {
-    NGSetLevelView *setLevelView = [[NGSetLevelView alloc] initWithFrame:CGRectMake(0, 0, 320, [UIScreen mainScreen].bounds.size.height - 49)];
+    NGSetLevelView *setLevelView = [[NGSetLevelView alloc] initWithDelegate:[[NGLevelPicker alloc] init] andWithFrame:CGRectMake(0, 0, 320, [UIScreen mainScreen].bounds.size.height - 49 -41)];
     self.view = setLevelView;
-
 }
 
 @end

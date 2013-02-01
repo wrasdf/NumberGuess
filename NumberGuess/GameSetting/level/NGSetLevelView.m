@@ -1,38 +1,38 @@
 
 #import "NGSetLevelView.h"
 #import "CreateUIElement.h"
+#import "NGLevelPicker.h"
+#import "Utility.h"
 
 
 @implementation NGSetLevelView {
     UILabel *levelLabel;
-    UIPickerView *levelPickerView;
-    NSMutableArray *levelDataArray;
+    NGLevelPicker *pickerLogic;
+    UIPickerView *levelPicker;
 }
 
-- (id)initWithFrame:(CGRect)frame {
-    self = [super initWithFrame:frame];
+- (id)initWithDelegate:(NGLevelPicker *) delegatePicker andWithFrame:(CGRect) rect{
+    self = [super init];
     if (self) {
+        pickerLogic = delegatePicker;
+        [self setFrame:rect];
         [self createUI];
+        [self setBackgroundColor:UIColorFromRGB(0xcccccc)];
+
     }
 
     return self;
 }
 
 - (void) createUIPicker{
-    levelDataArray = [[NSMutableArray alloc] init];
-    [levelDataArray addObject:@"Easy"];
-    [levelDataArray addObject:@"Medium"];
-    [levelDataArray addObject:@"Hard"];
-
-    levelPickerView = [[UIPickerView alloc] init];
-    [levelPickerView setDataSource:self];
-    [levelPickerView setDelegate:self];
-
-    [levelPickerView setFrame:CGRectMake(10, 50, 300, 162)];
-    levelPickerView.showsSelectionIndicator = YES;
-    [levelPickerView selectRow:1 inComponent:0 animated:YES];
-    [self addSubview:levelPickerView];
+    levelPicker = [[UIPickerView alloc] init];
+    [levelPicker setFrame:CGRectMake(10, 50, 300, 162)];
+    levelPicker.showsSelectionIndicator = YES;
+    [levelPicker selectRow:1 inComponent:0 animated:YES];
+    levelPicker.delegate = pickerLogic;
+    [self addSubview:levelPicker];
 }
+
 
 - (void) createLevelLabel{
     levelLabel = [[CreateUIElement alloc] createLabelWithCGRect:CGRectMake(10, 10, 300, 30) andWithTitle:@"Game Level:"];
@@ -44,23 +44,5 @@
     [self createUIPicker];
 }
 
--(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
-    return 1;
-}
-
-// Total rows in our component.
--(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
-    return [levelDataArray count];
-}
-
-// Display each row's data.
--(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
-    return [levelDataArray objectAtIndex:(NSUInteger) row];
-}
-
-// Do something with the selected row.
--(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
-    NSLog(@"You selected this: %@", [levelDataArray objectAtIndex:(NSUInteger) row]);
-}
 
 @end
