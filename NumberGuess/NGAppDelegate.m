@@ -35,6 +35,7 @@
 
     self.window.rootViewController = tabBarController;
     [self.window makeKeyAndVisible];
+    [self setNGConfig];
     return YES;
 }
 
@@ -61,6 +62,7 @@
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
@@ -71,6 +73,15 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void) setNGConfig{
+    NSUserDefaults *config = [NSUserDefaults standardUserDefaults];
+    NSString *gameLevel = [config stringForKey:@"Level"];
+    if (!gameLevel){
+        [config setObject:@"Easy" forKey:@"Level"];
+        [config setInteger:8 forKey:@"GuessTimes"];
+    }
 }
 
 @end

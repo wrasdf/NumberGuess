@@ -9,7 +9,6 @@
 
 @class NGGameViewController;
 
-
 @interface NGGameView : UIView <UITextFieldDelegate>
 
 @property(nonatomic, strong) NGGameViewController *delegate;

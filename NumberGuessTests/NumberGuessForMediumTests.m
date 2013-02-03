@@ -1,13 +1,11 @@
-#import "NumberGuessTests.h"
-#import "RandomNumber.h"
+#import "NumberGuessForMediumTests.h"
 #import "NGValidation.h"
 #import "NGMaster.h"
 
 
 
-@implementation NumberGuessTests{
+@implementation NumberGuessForMediumTests {
     NSArray *targetNumber;
-    RandomNumber *randomNumber;
     NGValidation *validation;
     NGMaster *gameMaster;
 }
@@ -16,10 +14,8 @@
 - (void)setUp {
     [super setUp];
     targetNumber = @[@"1",@"2",@"3",@"4"];
-    randomNumber = [[RandomNumber alloc] init];
     validation = [[NGValidation alloc] init];
-    gameMaster = [[NGMaster alloc] initWithMaxCount:5 andTargetNumbers:targetNumber];
-
+    gameMaster = [[NGMaster alloc] initWithMaxCount:5 andWithGameLevel:@"Medium" andTargetNumbers:targetNumber];
 }
 
 - (void)tearDown
@@ -75,13 +71,6 @@
     STAssertEqualObjects(@"You input is not valid. You only could input 4 digal numbers between 0 - 9.", [guessResult objectForKey:@"msg"], nil);
     STAssertEqualObjects(@"NO", [guessResult objectForKey:@"isFinished"], nil);
 }
-
-- (void)test_should_return_non_equal_random_numbers{
-    NSArray *rand1 = [randomNumber create];
-    NSArray *rand2 = [randomNumber create];
-    STAssertEqualObjects(rand1, rand2, nil, nil);
-}
-
 
 
 @end

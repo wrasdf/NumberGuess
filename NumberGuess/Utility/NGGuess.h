@@ -11,7 +11,7 @@
 @interface
 NGGuess : NSObject
 
-- (NSString *)compareGuessNumber:(NSArray *) guessNumbers andTargetNumbers:(NSArray *) targetNumbers;
+- (NSDictionary *)compareGuessNumber:(NSArray *) guessNumbers andTargetNumbers:(NSArray *) targetNumbers;
 
 @end
 

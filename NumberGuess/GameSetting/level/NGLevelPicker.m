@@ -6,21 +6,34 @@
 
 
 #import "NGLevelPicker.h"
+#import "NGGameViewController.h"
 
 
 @implementation NGLevelPicker {
     NSMutableArray *levelSource;
+    NSUserDefaults *config;
 }
 
 - (id)init {
     self = [super init];
     if (self) {
+        config = [[NSUserDefaults alloc] init];
         levelSource = [[NSMutableArray alloc] init];
         [levelSource addObject:@"Easy"];
         [levelSource addObject:@"Medium"];
         [levelSource addObject:@"Hard"];
     }
     return self;
+}
+
+-(int)getSelectIndex{
+    if ([[config stringForKey:@"Level"] isEqualToString:@"Easy"]){
+        return 0;
+    }else if([[config stringForKey:@"Level"] isEqualToString:@"Medium"]){
+        return 1;
+    }else{
+        return 2;
+    }
 }
 
 
@@ -41,8 +54,10 @@
 // Do something with the selected row.
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
     NSLog(@"You selected this: %@", [levelSource objectAtIndex:(NSUInteger) row]);
+    [config setObject:[levelSource objectAtIndex:(NSUInteger) row] forKey:@"Level"];
+    [config synchronize];
+    [[[NGGameViewController alloc] init] resetGame:nil];
+    NSLog(@"This is the Level in conig : ,%@",[config stringForKey:@"Level"]);
 }
-
-
 
 @end

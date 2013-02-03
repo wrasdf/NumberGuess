@@ -17,8 +17,6 @@
         pickerLogic = delegatePicker;
         [self setFrame:rect];
         [self createUI];
-        [self setBackgroundColor:UIColorFromRGB(0xcccccc)];
-
     }
 
     return self;
@@ -28,8 +26,8 @@
     levelPicker = [[UIPickerView alloc] init];
     [levelPicker setFrame:CGRectMake(10, 50, 300, 162)];
     levelPicker.showsSelectionIndicator = YES;
-    [levelPicker selectRow:1 inComponent:0 animated:YES];
     levelPicker.delegate = pickerLogic;
+    [levelPicker selectRow:[pickerLogic getSelectIndex] inComponent:0 animated:YES];
     [self addSubview:levelPicker];
 }
 
@@ -37,6 +35,7 @@
 - (void) createLevelLabel{
     levelLabel = [[CreateUIElement alloc] createLabelWithCGRect:CGRectMake(10, 10, 300, 30) andWithTitle:@"Game Level:"];
     levelLabel.textAlignment = (NSTextAlignment) UITextAlignmentLeft;
+    [self addSubview:levelLabel];
 }
 
 - (void) createUI{

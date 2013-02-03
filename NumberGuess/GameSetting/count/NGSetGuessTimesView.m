@@ -29,14 +29,15 @@
 -(void) createLabel{
     guessTimesLabel = [[CreateUIElement alloc] createLabelWithCGRect:CGRectMake(10, 10, 300, 30) andWithTitle:@"Guess Time:"];
     guessTimesLabel.textAlignment = (NSTextAlignment) UITextAlignmentLeft;
+    [self addSubview:guessTimesLabel];
 }
 
 - (void) createUIPicker{
     timesPickerView = [[UIPickerView alloc] init];
     [timesPickerView setFrame:CGRectMake(10, 50, 300, 162)];
     timesPickerView.showsSelectionIndicator = YES;
-    [timesPickerView selectRow:1 inComponent:0 animated:YES];
     timesPickerView.delegate = timePicker;
+    [timesPickerView selectRow:[timePicker getSelectIndex] inComponent:0 animated:YES];
     [self addSubview:timesPickerView];
 }
 

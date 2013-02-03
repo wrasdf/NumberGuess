@@ -9,5 +9,5 @@
 
 
 @interface NGGuessTimesPicker : NSObject<UIPickerViewDelegate,UIPickerViewDataSource>
-
+-(int) getSelectIndex;
 @end

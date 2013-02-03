@@ -9,4 +9,5 @@
 
 
 @interface NGLevelPicker : NSObject <UIPickerViewDelegate,UIPickerViewDataSource>
+-(int)getSelectIndex;
 @end

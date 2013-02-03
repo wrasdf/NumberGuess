@@ -11,16 +11,20 @@
     NGValidation *validation;
     NSArray *targetNumbers;
     NSMutableDictionary *guessResult;
+    NSString *gameLevel;
+    NSUserDefaults *config;
     int maxCount;
     int currentCount;
 }
 
-- (id) initWithMaxCount:(int) count andTargetNumbers:(NSArray *)targetArray{
+- (id) initWithMaxCount:(int) count andWithGameLevel:(NSString *)level  andTargetNumbers:(NSArray *)targetArray{
     self = [super init];
     if (self) {
+        config = [[NSUserDefaults alloc] init];
         maxCount = count;
         currentCount = 0;
         guess = [[NGGuess alloc] init];
+        gameLevel = level;
         targetNumbers = targetArray;
         guessResult = [[NSMutableDictionary alloc] init];
         validation = [[NGValidation alloc] init];
@@ -53,22 +57,31 @@
 
     currentCount ++;
 
-    NSString *result = [guess compareGuessNumber:numbers andTargetNumbers:targetNumbers];
+    NSDictionary *resultDic = [guess compareGuessNumber:numbers andTargetNumbers:targetNumbers];
+    NSString *result = [resultDic objectForKey:@"GuessResult"];
+    NSArray *guessBArray = [resultDic objectForKey:@"GuessBList"];
 
     if ([result isEqual:@"4A0B"]){
-        return [self generateResult:result andMsg:[NSString stringWithFormat:@"Congratulations. You win this game.",currentCount] andIsFinished:@"YES"];
+        return [self generateResult:result andMsg:[NSString stringWithFormat:@"Congratulations. You win this game."] andIsFinished:@"YES"];
     }else{
         if ([self isExceeded]){
             return [self generateResult:result andMsg:@"You have failed this game." andIsFinished:@"NO"];
         }
-        return [self generateResult:result andMsg:[NSString stringWithFormat:@"You left only %d times.", (maxCount - currentCount)] andIsFinished:@"NO"];
+
+        if ([gameLevel isEqual:@"Easy"]){
+            return [self generateResult:result andMsg:[NSString stringWithFormat:@"The %@ is not at the right place.",[guessBArray componentsJoinedByString:@","]] andIsFinished:@"NO"];
+        }else{
+            return [self generateResult:result andMsg:[NSString stringWithFormat:@"You left only %d times.", (maxCount - currentCount)] andIsFinished:@"NO"];
+        }
     }
 
 }
 
 - (void) resetGame {
     currentCount = 0;
-    targetNumbers = [randomNumber create];
+    maxCount = [config integerForKey:@"GuessTimes"];
+    gameLevel = [config stringForKey:@"Level"];
+    targetNumbers = [randomNumber createWithLevel:gameLevel];
     [guessResult removeAllObjects];
 }
 

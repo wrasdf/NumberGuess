@@ -10,7 +10,7 @@
 
 @interface NGMaster : NSObject
 
-- (id) initWithMaxCount:(int) count andTargetNumbers:(NSArray *) targetArray;
+- (id) initWithMaxCount:(int) count andWithGameLevel:(NSString *) level andTargetNumbers:(NSArray *) targetArray;
 
 - (BOOL) isExceeded;
 - (void) resetGame;

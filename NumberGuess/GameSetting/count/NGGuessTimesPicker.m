@@ -6,15 +6,18 @@
 
 
 #import "NGGuessTimesPicker.h"
+#import "NGGameViewController.h"
 
 
 @implementation NGGuessTimesPicker {
     NSMutableArray *countDataArray;
+    NSUserDefaults *config;
 }
 
 - (id)init {
     self = [super init];
     if (self) {
+        config = [[NSUserDefaults alloc] init];
         countDataArray = [[NSMutableArray alloc] init];
         [countDataArray addObject:@"5"];
         [countDataArray addObject:@"6"];
@@ -27,6 +30,9 @@
     return self;
 }
 
+-(int) getSelectIndex{
+    return [config integerForKey:@"GuessTimes"] - 5 ;
+}
 
 -(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
     return 1;
@@ -45,6 +51,10 @@
 // Do something with the selected row.
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
     NSLog(@"You selected this: %@", [countDataArray objectAtIndex:(NSUInteger) row]);
+    [config setInteger:[[countDataArray objectAtIndex:(NSUInteger) row] intValue] forKey:@"GuessTimes"];
+    [config synchronize];
+    [[[NGGameViewController alloc] init] resetGame:nil];
+    NSLog(@"This is the guess Times in conig : ,%d",[config integerForKey:@"GuessTimes"]);
 }
 
 @end

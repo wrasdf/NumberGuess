@@ -27,10 +27,16 @@
     }
 }
 
-- (NSArray *) create {
+- (NSArray *)createWithLevel:(NSString *)level{
     [tempArr removeAllObjects];
-    for (int i=0; i<4; i++){
-        [self insertNonDuplicatedNumber];
+    if ([level isEqualToString:@"Hard"]){
+        for (int i=0; i<4; i++){
+            [tempArr addObject:[NSString stringWithFormat:@"%d",[self getRandomNumber:0 to:9]]];
+        }
+    }else{
+        for (int i=0; i<4; i++){
+            [self insertNonDuplicatedNumber];
+        }
     }
     NSLog(@"in the random number: %@",tempArr);
     return tempArr;

@@ -10,7 +10,7 @@
 
 @interface RandomNumber : NSObject
 
-- (NSArray *)create;
+- (NSArray *)createWithLevel:(NSString *)level;
 
 @end
 

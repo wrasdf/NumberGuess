@@ -13,14 +13,18 @@
     NSDictionary *guessResult;
     BOOL resetGame;
     NGGameView *gameView;
+    NSUserDefaults *config;
+    NSString *gameLevel;
 }
 
 
 - (id)init {
     self = [super init];
     if (self) {
+        config = [[NSUserDefaults alloc] init];
+        gameLevel = [config stringForKey:@"Level"];
         RandomNumber *randomNumber = [[RandomNumber alloc] init];
-        guessMaster = [[NGMaster alloc] initWithMaxCount:5 andTargetNumbers:[randomNumber create]];
+        guessMaster = [[NGMaster alloc] initWithMaxCount:5  andWithGameLevel:gameLevel  andTargetNumbers:[randomNumber createWithLevel:gameLevel]];
         convertedArray = [[NSMutableArray alloc] init];
         self.title = @"Game View";
     }
@@ -47,7 +51,9 @@
 
 }
 
-- (void)resetUI:(id)sender {
+
+- (void)resetGame:(id)sender {
+    NSLog(@"This is in game controller reset functions");
     [gameView resetUI];
     [guessMaster resetGame];
     resetGame = NO;
@@ -56,7 +62,7 @@
 - (IBAction)guess:(id)sender {
 
     if (resetGame) {
-        [self resetUI:sender];
+        [self resetGame:sender];
         return;
     }
 

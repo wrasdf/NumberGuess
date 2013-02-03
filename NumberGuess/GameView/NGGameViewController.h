@@ -9,6 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface NGGameViewController : UIViewController
-
-
+- (void)resetGame:(id)sender;
 @end

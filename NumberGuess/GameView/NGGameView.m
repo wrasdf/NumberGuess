@@ -15,12 +15,15 @@
     UILabel *gameTitle;
     UILabel *gameMsg;
     UILabel *gameResult;
+    UILabel *gameLevel;
     UITextField *guessInput;
+    NSUserDefaults *config;
 }
 
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
+        config = [[NSUserDefaults alloc] init];
         [self createUI];
     }
 
@@ -29,6 +32,8 @@
 
 - (void)createUI {
 
+    gameLevel = [[CreateUIElement alloc] createLabelWithCGRect:CGRectMake(10, 15, 300, 20) andWithTitle:[NSString stringWithFormat:@"Game Level : %@",[config stringForKey:@"Level"]]];
+    [self addSubview:gameLevel];
     //create UI Game Title
     gameTitle = [[CreateUIElement alloc] createLabelWithCGRect:CGRectMake(10, 40, 300, 40) andWithTitle:@"Guess Game"];
     gameTitle.textColor = [UIColor blueColor];
@@ -98,6 +103,8 @@
 }
 
 - (void) resetUI{
+    NSLog(@"This is in reset Game UI");
+    gameLevel.text = [NSString stringWithFormat:@"Game Level : %@",[config stringForKey:@"Level"]];
     gameResult.text = @"";
     gameMsg.text = @"";
     guessInput.text = @"";
