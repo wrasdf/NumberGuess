@@ -1,25 +1,29 @@
 //
-// Created by twer on 2/1/13.
+// Created by twer on 2/3/13.
 //
 // To change the template use AppCode | Preferences | File Templates.
 //
 
 
-#import "NGLevelPicker.h"
+#import "NGGuessTimesPicker.h"
 
 
-@implementation NGLevelPicker {
-    NSMutableArray *levelSource;
+@implementation NGGuessTimesPicker {
+    NSMutableArray *countDataArray;
 }
 
 - (id)init {
     self = [super init];
     if (self) {
-        levelSource = [[NSMutableArray alloc] init];
-        [levelSource addObject:@"Easy"];
-        [levelSource addObject:@"Medium"];
-        [levelSource addObject:@"Hard"];
+        countDataArray = [[NSMutableArray alloc] init];
+        [countDataArray addObject:@"5"];
+        [countDataArray addObject:@"6"];
+        [countDataArray addObject:@"7"];
+        [countDataArray addObject:@"8"];
+        [countDataArray addObject:@"9"];
+        [countDataArray addObject:@"10"];
     }
+
     return self;
 }
 
@@ -30,19 +34,17 @@
 
 // Total rows in our component.
 -(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
-    return [levelSource count];
+    return [countDataArray count];
 }
 
 // Display each row's data.
 -(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
-    return [levelSource objectAtIndex:(NSUInteger) row];
+    return [countDataArray objectAtIndex:(NSUInteger) row];
 }
 
 // Do something with the selected row.
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
-    NSLog(@"You selected this: %@", [levelSource objectAtIndex:(NSUInteger) row]);
+    NSLog(@"You selected this: %@", [countDataArray objectAtIndex:(NSUInteger) row]);
 }
-
-
 
 @end

@@ -1,5 +1,5 @@
 //
-// Created by twer on 2/1/13.
+// Created by twer on 2/3/13.
 //
 // To change the template use AppCode | Preferences | File Templates.
 //
@@ -8,5 +8,6 @@
 #import <Foundation/Foundation.h>
 
 
-@interface NGLevelPicker : NSObject <UIPickerViewDelegate,UIPickerViewDataSource>
+@interface NGGuessTimesPicker : NSObject<UIPickerViewDelegate,UIPickerViewDataSource>
+
 @end

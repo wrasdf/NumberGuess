@@ -23,9 +23,8 @@
 
 
 - (void)loadView {
-    NGSetGuessTimesView *setGuessTimesView = [[NGSetGuessTimesView alloc] initWithFrame:CGRectMake(0, 0, 320, [UIScreen mainScreen].bounds.size.height - 49)];
-    self.view = setGuessTimesView;
-
+    NGSetGuessTimesView *guessTimesView = [[NGSetGuessTimesView alloc] initWithPickerDelegate:[[NGGuessTimesPicker alloc] init] andWithFrame:CGRectMake(0, 0, 320, [UIScreen mainScreen].bounds.size.height - 49)];
+    self.view = guessTimesView;
 }
 
 @end

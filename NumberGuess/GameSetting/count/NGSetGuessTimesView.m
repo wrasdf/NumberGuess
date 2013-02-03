@@ -8,20 +8,23 @@
 #import "NGSetGuessTimesView.h"
 #import "CreateUIElement.h"
 
+
 @implementation NGSetGuessTimesView {
     UILabel *guessTimesLabel;
     UIPickerView *timesPickerView;
-    NSMutableArray *countDataArray;
+    NGGuessTimesPicker *timePicker;
 }
 
-- (id)initWithFrame:(CGRect)frame {
+- (id) initWithPickerDelegate:(NGGuessTimesPicker *) aTimePicker andWithFrame:(CGRect) frame{
     self = [super initWithFrame:frame];
     if (self) {
+        timePicker = aTimePicker;
         [self createUI];
     }
 
     return self;
 }
+
 
 -(void) createLabel{
     guessTimesLabel = [[CreateUIElement alloc] createLabelWithCGRect:CGRectMake(10, 10, 300, 30) andWithTitle:@"Guess Time:"];
@@ -29,21 +32,11 @@
 }
 
 - (void) createUIPicker{
-    countDataArray = [[NSMutableArray alloc] init];
-    [countDataArray addObject:@"5"];
-    [countDataArray addObject:@"6"];
-    [countDataArray addObject:@"7"];
-    [countDataArray addObject:@"8"];
-    [countDataArray addObject:@"9"];
-    [countDataArray addObject:@"10"];
-
     timesPickerView = [[UIPickerView alloc] init];
-    [timesPickerView setDataSource:self];
-    [timesPickerView setDelegate:self];
-
     [timesPickerView setFrame:CGRectMake(10, 50, 300, 162)];
     timesPickerView.showsSelectionIndicator = YES;
     [timesPickerView selectRow:1 inComponent:0 animated:YES];
+    timesPickerView.delegate = timePicker;
     [self addSubview:timesPickerView];
 }
 
@@ -53,23 +46,5 @@
 }
 
 
--(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
-    return 1;
-}
-
-// Total rows in our component.
--(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
-    return [countDataArray count];
-}
-
-// Display each row's data.
--(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
-    return [countDataArray objectAtIndex:(NSUInteger) row];
-}
-
-// Do something with the selected row.
--(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
-    NSLog(@"You selected this: %@", [countDataArray objectAtIndex:(NSUInteger) row]);
-}
 
 @end

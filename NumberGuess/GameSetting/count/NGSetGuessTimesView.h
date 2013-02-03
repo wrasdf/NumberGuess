@@ -6,7 +6,8 @@
 
 
 #import <Foundation/Foundation.h>
+#import "NGGuessTimesPicker.h"
 
-
-@interface NGSetGuessTimesView : UIView<UIPickerViewDataSource, UIPickerViewDelegate>
+@interface NGSetGuessTimesView : UIView
+- (id) initWithPickerDelegate:(NGGuessTimesPicker *) aTimePicker andWithFrame:(CGRect) frame;
 @end
