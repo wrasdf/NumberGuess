@@ -14,17 +14,15 @@
     BOOL resetGame;
     NGGameView *gameView;
     NSUserDefaults *config;
-    NSString *gameLevel;
 }
 
 
 - (id)init {
     self = [super init];
     if (self) {
-        config = [[NSUserDefaults alloc] init];
-        gameLevel = [config stringForKey:@"Level"];
+        config = [NSUserDefaults standardUserDefaults];
         RandomNumber *randomNumber = [[RandomNumber alloc] init];
-        guessMaster = [[NGMaster alloc] initWithMaxCount:5  andWithGameLevel:gameLevel  andTargetNumbers:[randomNumber createWithLevel:gameLevel]];
+        guessMaster = [[NGMaster alloc] initWithMaxCount:[config integerForKey:@"GuessTimes"]  andWithGameLevel:[config stringForKey:@"Level"]  andTargetNumbers:[randomNumber createWithLevel:[config stringForKey:@"Level"]]];
         convertedArray = [[NSMutableArray alloc] init];
         self.title = @"Game View";
     }

@@ -17,7 +17,6 @@
     self = [super init];
     if (self) {
         self.title = @"Levels";
-        NGLevelPicker *picker = [[NGLevelPicker alloc] init];
     }
 
     return self;

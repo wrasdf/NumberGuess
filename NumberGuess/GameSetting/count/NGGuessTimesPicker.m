@@ -17,7 +17,7 @@
 - (id)init {
     self = [super init];
     if (self) {
-        config = [[NSUserDefaults alloc] init];
+        config = [NSUserDefaults standardUserDefaults];
         countDataArray = [[NSMutableArray alloc] init];
         [countDataArray addObject:@"5"];
         [countDataArray addObject:@"6"];

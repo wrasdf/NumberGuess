@@ -17,7 +17,7 @@
 - (id)init {
     self = [super init];
     if (self) {
-        config = [[NSUserDefaults alloc] init];
+        config = [NSUserDefaults standardUserDefaults];
         levelSource = [[NSMutableArray alloc] init];
         [levelSource addObject:@"Easy"];
         [levelSource addObject:@"Medium"];

@@ -9,7 +9,18 @@
 
 
 @implementation NGValidation {
+    NSUserDefaults *config;
 }
+
+- (id)init {
+    self = [super init];
+    if (self) {
+        config = [NSUserDefaults standardUserDefaults];
+    }
+
+    return self;
+}
+
 
 - (BOOL)isFourDigits:(NSArray *)array {
     NSString *searchString = [array componentsJoinedByString:@""];
@@ -45,8 +56,10 @@
         return @"You input is not valid. You only could input 4 digal numbers between 0 - 9.";
     }
 
-    if ([self hasDuplicatedNumber:array]){
-        return @"Please don't input duplicate numbers.";
+    if (![[config stringForKey:@"Level"] isEqualToString:@"Hard"]){
+        if ([self hasDuplicatedNumber:array]){
+            return @"Please don't input duplicate numbers.";
+        }
     }
 
     return @"";

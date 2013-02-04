@@ -20,7 +20,7 @@
 - (id) initWithMaxCount:(int) count andWithGameLevel:(NSString *)level  andTargetNumbers:(NSArray *)targetArray{
     self = [super init];
     if (self) {
-        config = [[NSUserDefaults alloc] init];
+        config = [NSUserDefaults standardUserDefaults];
         maxCount = count;
         currentCount = 0;
         guess = [[NGGuess alloc] init];
