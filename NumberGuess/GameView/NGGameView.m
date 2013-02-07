@@ -23,7 +23,7 @@
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        config = [[NSUserDefaults alloc] init];
+        config = [NSUserDefaults standardUserDefaults];
         [self createUI];
     }
 

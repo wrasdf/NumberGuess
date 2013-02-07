@@ -14,6 +14,7 @@
     BOOL resetGame;
     NGGameView *gameView;
     NSUserDefaults *config;
+    NSNotificationCenter *notificationCenter;
 }
 
 
@@ -21,9 +22,11 @@
     self = [super init];
     if (self) {
         config = [NSUserDefaults standardUserDefaults];
+        notificationCenter = [NSNotificationCenter defaultCenter];
         RandomNumber *randomNumber = [[RandomNumber alloc] init];
         guessMaster = [[NGMaster alloc] initWithMaxCount:[config integerForKey:@"GuessTimes"]  andWithGameLevel:[config stringForKey:@"Level"]  andTargetNumbers:[randomNumber createWithLevel:[config stringForKey:@"Level"]]];
         convertedArray = [[NSMutableArray alloc] init];
+        [notificationCenter addObserver:self selector:@selector(resetGame:) name:@"NGResetGame" object:nil];
         self.title = @"Game View";
     }
     return self;

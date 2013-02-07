@@ -12,12 +12,14 @@
 @implementation NGLevelPicker {
     NSMutableArray *levelSource;
     NSUserDefaults *config;
+    NSNotificationCenter *notificationCenter;
 }
 
 - (id)init {
     self = [super init];
     if (self) {
         config = [NSUserDefaults standardUserDefaults];
+        notificationCenter = [NSNotificationCenter defaultCenter];
         levelSource = [[NSMutableArray alloc] init];
         [levelSource addObject:@"Easy"];
         [levelSource addObject:@"Medium"];
@@ -56,7 +58,7 @@
     NSLog(@"You selected this: %@", [levelSource objectAtIndex:(NSUInteger) row]);
     [config setObject:[levelSource objectAtIndex:(NSUInteger) row] forKey:@"Level"];
     [config synchronize];
-    [[[NGGameViewController alloc] init] resetGame:nil];
+    [notificationCenter postNotificationName:@"NGResetGame" object:nil];
     NSLog(@"This is the Level in conig : ,%@",[config stringForKey:@"Level"]);
 }
 

@@ -12,12 +12,14 @@
 @implementation NGGuessTimesPicker {
     NSMutableArray *countDataArray;
     NSUserDefaults *config;
+    NSNotificationCenter *notificationCenter;
 }
 
 - (id)init {
     self = [super init];
     if (self) {
         config = [NSUserDefaults standardUserDefaults];
+        notificationCenter = [NSNotificationCenter defaultCenter];
         countDataArray = [[NSMutableArray alloc] init];
         [countDataArray addObject:@"5"];
         [countDataArray addObject:@"6"];
@@ -53,7 +55,7 @@
     NSLog(@"You selected this: %@", [countDataArray objectAtIndex:(NSUInteger) row]);
     [config setInteger:[[countDataArray objectAtIndex:(NSUInteger) row] intValue] forKey:@"GuessTimes"];
     [config synchronize];
-    [[[NGGameViewController alloc] init] resetGame:nil];
+    [notificationCenter postNotificationName:@"NGResetGame" object:nil];
     NSLog(@"This is the guess Times in conig : ,%d",[config integerForKey:@"GuessTimes"]);
 }
 
