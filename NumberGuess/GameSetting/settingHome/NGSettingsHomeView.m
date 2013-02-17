@@ -1,7 +1,5 @@
 #import "NGSettingsHomeView.h"
-#import "CreateUIElement.h"
-#import "Utility.h"
-
+#import "NGSettingTableLogic.h"
 
 @implementation NGSettingsHomeView {
     UITableView *settingList;
@@ -11,7 +9,7 @@
     self = [super init];
     if (self) {
         settingList = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, 320, 200) style:UITableViewStyleGrouped];
-        settingList.backgroundView = [[UIView alloc]init];
+        settingList.backgroundView = nil;
         settingList.backgroundColor = [UIColor clearColor];
         self.tableLogic = tableLogic;
         settingList.delegate = self.tableLogic;
@@ -22,26 +20,6 @@
 
     return self;
 }
-
-//
-//- (void)createUI {
-//
-//
-//    gameLevelButton = [[CreateUIElement alloc] createButtonWithCGRect:CGRectMake(10, 10, 300, 40) andWithTitle:@"Levels"];
-//    gameLevelButton.titleLabel.textAlignment = (NSTextAlignment) UITextAlignmentLeft;
-//    [gameLevelButton addTarget:_target action:@selector(changeViewToSetLevel:) forControlEvents:UIControlEventTouchUpInside];
-//    [self addSubview:gameLevelButton];
-//
-//    gameTimesButton = [[CreateUIElement alloc] createButtonWithCGRect:CGRectMake(10, 60, 300, 40) andWithTitle:@"Guess Times"];
-//    gameTimesButton.titleLabel.textAlignment = (NSTextAlignment) UITextAlignmentLeft;
-//    [gameTimesButton addTarget:_target action:@selector(changeViewToSetGuessTimes:) forControlEvents:UIControlEventTouchUpInside];
-//    [self addSubview:gameTimesButton];
-//
-//
-//
-//
-//
-//}
 
 
 @end

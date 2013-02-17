@@ -6,17 +6,16 @@
 
 
 #import "NGSettingTableLogic.h"
+#import "NGSettingHomeProtocol.h"
 
 
 @implementation NGSettingTableLogic {
-    NSNotificationCenter *notificationCenter;
 }
 
 - (id)init {
     self = [super init];
     if (self) {
-        notificationCenter = [NSNotificationCenter defaultCenter];
-        self.items = [[NSArray alloc] initWithObjects:@"Levels",@"Guess Times", nil];
+        self.items = [NSArray arrayWithObjects:@"Level",@"Guess Times",nil];;
     }
 
     return self;
@@ -43,12 +42,11 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Show an alert with the index selected.
 
     if([[self.items objectAtIndex:(NSUInteger) indexPath.row] isEqualToString:@"Levels"]){
-        [notificationCenter postNotificationName:@"NGChangeSettingViewToSetLevel" object:nil];
+        [self.delegate changeViewToSetLevel];
     }else{
-        [notificationCenter postNotificationName:@"NGChangeSettingViewToGuessTimes" object:nil];
+        [self.delegate changeViewToSetGuessTimes];
     }
 
 }

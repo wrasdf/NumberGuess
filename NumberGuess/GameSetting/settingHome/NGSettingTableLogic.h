@@ -7,7 +7,9 @@
 
 #import <Foundation/Foundation.h>
 
+@protocol NGSettingHomeProtocol;
 
 @interface NGSettingTableLogic : NSObject <UITableViewDataSource,UITableViewDelegate>
-    @property (nonatomic,retain) NSArray *items;
+@property (nonatomic,retain) NSArray *items;
+@property (nonatomic,retain) id<NGSettingHomeProtocol> delegate;
 @end

@@ -86,6 +86,7 @@
 		3686774BBCFC7E7B468DF326 /* close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "close@2x.png"; path = "../SinaWeibo/SinaWeibo.bundle/images/close@2x.png"; sourceTree = "<group>"; };
 		36867834D6D2C5A0FE339B9B /* NGSettingsHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGSettingsHomeController.h; sourceTree = "<group>"; };
 		3686787BBFF8D4EB072108D3 /* selection-tab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "selection-tab.png"; sourceTree = "<group>"; };
+		368678852EBB4F763CDE2C8F /* NGSettingHomeProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGSettingHomeProtocol.h; sourceTree = "<group>"; };
 		368678B3BE5F6E4110F312A7 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = ../JSONKit/JSONKit.m; sourceTree = "<group>"; };
 		368678F000246C9C13AF8E91 /* NGSettingTableLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGSettingTableLogic.m; sourceTree = "<group>"; };
 		3686796E439E6E68850FB0CA /* CreateUIElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateUIElement.m; sourceTree = "<group>"; };
@@ -184,6 +185,7 @@
 				36867AEF4A9ECA68A426EE09 /* NGSettingsHomeView.m */,
 				368678F000246C9C13AF8E91 /* NGSettingTableLogic.m */,
 				3686713D40E84CA4D3CACAF8 /* NGSettingTableLogic.h */,
+				368678852EBB4F763CDE2C8F /* NGSettingHomeProtocol.h */,
 			);
 			path = settingHome;
 			sourceTree = "<group>";

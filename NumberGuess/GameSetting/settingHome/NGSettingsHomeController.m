@@ -8,28 +8,28 @@
 #import "NGSettingsHomeController.h"
 #import "NGSetLevelController.h"
 #import "NGSetGuessTimesController.h"
+#import "NGSettingsHomeView.h"
+#import "NGSettingTableLogic.h"
 
 
 @implementation NGSettingsHomeController {
-    NSNotificationCenter *notificationCenter;
+    NGSettingTableLogic *tableLogic;
 }
 
 - (id)init {
     self = [super init];
     if (self) {
         self.title = @"Settings";
-        notificationCenter = [NSNotificationCenter defaultCenter];
+        tableLogic = [[NGSettingTableLogic alloc] init];
     }
     return self;
 }
 
 - (void)loadView {
 
-    NGSettingsHomeView *settingHomeView = [[NGSettingsHomeView alloc] initWithDelegate:[[NGSettingTableLogic alloc] init] andFrame:CGRectMake(0, 0, 320, [UIScreen mainScreen].bounds.size.height - 49)];
+    NGSettingsHomeView *settingHomeView = [[NGSettingsHomeView alloc] initWithDelegate:tableLogic andFrame:CGRectMake(0, 0, 320, [UIScreen mainScreen].bounds.size.height - 49)];
     self.view = settingHomeView;
-
-    [notificationCenter addObserver:self selector:@selector(changeViewToSetLevel) name:@"NGChangeSettingViewToSetLevel" object:nil];
-    [notificationCenter addObserver:self selector:@selector(changeViewToSetGuessTimes) name:@"NGChangeSettingViewToGuessTimes" object:nil];
+    tableLogic.delegate = self;
 
 }
 

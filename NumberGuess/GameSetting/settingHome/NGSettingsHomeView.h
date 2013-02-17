@@ -6,15 +6,10 @@
 
 
 #import <Foundation/Foundation.h>
-#import "NGSettingTableLogic.h"
 
-//@protocol NGSettingsHomeDelegate <NSObject>
-//- (void)changeViewToSetGuessTimes:(id)sender;
-//- (void)changeViewToSetLevel:(id)sender;
-//@end
+@class NGSettingTableLogic;
 
 @interface NGSettingsHomeView : UIView <UITextFieldDelegate>
 - (id)initWithDelegate:(NGSettingTableLogic *)tableLogic andFrame:(CGRect)frame;
-//@property(nonatomic, strong) id  target;
 @property (nonatomic, strong) id tableLogic;
 @end
