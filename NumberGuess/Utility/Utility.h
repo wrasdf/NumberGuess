@@ -22,6 +22,9 @@
     green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
     blue:((float)(rgbValue & 0xFF))/255.0 alpha:a]
 
+#define kAppKey @"75718724"
+#define kAppSecret @"ef50a34432001def23c1f5193bafc4c9"
+#define kAppRedirectURI @"http://www.sina.com"
 
 -(float) getScreenHeight;
 

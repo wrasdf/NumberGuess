@@ -103,7 +103,6 @@
 }
 
 - (void) resetUI{
-    NSLog(@"This is in reset Game UI");
     gameLevel.text = [NSString stringWithFormat:@"Game Level : %@",[config stringForKey:@"Level"]];
     gameResult.text = @"";
     gameMsg.text = @"";

@@ -6,6 +6,7 @@
 
 
 #import <Foundation/Foundation.h>
+#import "NGSettingTableLogic.h"
 
 //@protocol NGSettingsHomeDelegate <NSObject>
 //- (void)changeViewToSetGuessTimes:(id)sender;
@@ -13,6 +14,7 @@
 //@end
 
 @interface NGSettingsHomeView : UIView <UITextFieldDelegate>
-@property(nonatomic, strong) id  target;
-//@property(nonatomic, strong) id <NGSettingsHomeDelegate> target;
+- (id)initWithDelegate:(NGSettingTableLogic *)tableLogic andFrame:(CGRect)frame;
+//@property(nonatomic, strong) id  target;
+@property (nonatomic, strong) id tableLogic;
 @end

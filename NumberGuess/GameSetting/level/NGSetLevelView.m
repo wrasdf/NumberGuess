@@ -2,7 +2,6 @@
 #import "NGSetLevelView.h"
 #import "CreateUIElement.h"
 #import "NGLevelPicker.h"
-#import "Utility.h"
 
 
 @implementation NGSetLevelView {

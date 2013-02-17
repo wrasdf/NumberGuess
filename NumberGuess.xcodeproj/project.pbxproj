@@ -8,20 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		368670091B686361753B91D9 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 3686718128A70F896663DF23 /* Utility.m */; };
+		36867024E6977E881D16A197 /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = 368674D82F04BA7B6D5125BD /* close.png */; };
 		36867068F5B9C9EB3D658173 /* NGSetGuessTimesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36867C6030DFE53A55B9DDA2 /* NGSetGuessTimesView.m */; };
 		368671F15314D4A949DF73A6 /* NGGuessTimesPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 3686730AB167FBFE962AB630 /* NGGuessTimesPicker.m */; };
 		3686736E6518477D65385309 /* 12.png in Resources */ = {isa = PBXBuildFile; fileRef = 36867A551206BBEFF6D96891 /* 12.png */; };
 		368673A9A98D971E84894A54 /* NGSetGuessTimesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36867032A695AB5CA5E1539F /* NGSetGuessTimesController.m */; };
 		368673E160F56A73140BAE46 /* NGSettingsHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36867015663C42524441AFDE /* NGSettingsHomeController.m */; };
+		3686742063B5A319FE52E6C4 /* SinaWeibo.m in Sources */ = {isa = PBXBuildFile; fileRef = 36867ECC500C331BAA2914E6 /* SinaWeibo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		36867443029BAC7730013303 /* GuessForEasyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 36867206C4FAF6451FF60A48 /* GuessForEasyTest.m */; };
 		3686747152930603AFCA9C99 /* NGSetLevelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36867EAD9C82BCD77AA437EF /* NGSetLevelController.m */; };
 		36867482D6C16D18586C6A32 /* NGSettingsHomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36867AEF4A9ECA68A426EE09 /* NGSettingsHomeView.m */; };
 		36867518726845DF6E7B7EB0 /* NGSetLevelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36867F7011868846277045FE /* NGSetLevelView.m */; };
+		3686757B5E90B5A5998152E6 /* NGSettingTableLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 368678F000246C9C13AF8E91 /* NGSettingTableLogic.m */; };
 		368675B4753111AA919FEB79 /* tabbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 36867228D0D5B5C0A65A1596 /* tabbar.png */; };
 		368675FFFB517A6D7D8643BD /* selection-tab.png in Resources */ = {isa = PBXBuildFile; fileRef = 3686787BBFF8D4EB072108D3 /* selection-tab.png */; };
 		36867627820E7AE81ED3A7A4 /* tabbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36867B58DE1B04484ABE7FE2 /* tabbar@2x.png */; };
 		368676349118568BA01E2E26 /* NGMaster.m in Sources */ = {isa = PBXBuildFile; fileRef = 368675A2FA8E1B5C67F1CCF1 /* NGMaster.m */; };
 		36867743C8AB561EFF799036 /* NGValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3686766CC7DD44B0B798B822 /* NGValidation.m */; };
+		368678ECA2A46ACD13B632C0 /* SinaWeiboAuthorizeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 368673362FFA43267B4CDEBE /* SinaWeiboAuthorizeView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		368679A0C28E51E64F08C358 /* SinaWeiboRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 36867BCBA6F2B21263F6BA9C /* SinaWeiboRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		36867B8EA273BF820D704F92 /* close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3686774BBCFC7E7B468DF326 /* close@2x.png */; };
+		36867C15FFC112DCB5F06CC9 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 368678B3BE5F6E4110F312A7 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		36867C8B82EB7EC5A677EE50 /* NGLevelPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 36867FCBD06ABC3BE50C17DB /* NGLevelPicker.m */; };
 		36867CF6867E281F922AB02E /* CreateUIElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 3686796E439E6E68850FB0CA /* CreateUIElement.m */; };
 		36867D165B02B3D69B629165 /* NGGameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36867F2D346BB4BDFDBE2745 /* NGGameView.m */; };
@@ -61,31 +68,44 @@
 		36867032A695AB5CA5E1539F /* NGSetGuessTimesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGSetGuessTimesController.m; sourceTree = "<group>"; };
 		368670BFB4D4981C253B7E73 /* selection-tab@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "selection-tab@2x.png"; sourceTree = "<group>"; };
 		368670D1407E7BB9B1BBB24D /* GuessForEasyTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuessForEasyTest.h; sourceTree = "<group>"; };
+		3686713D40E84CA4D3CACAF8 /* NGSettingTableLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGSettingTableLogic.h; sourceTree = "<group>"; };
 		3686718128A70F896663DF23 /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
 		36867206C4FAF6451FF60A48 /* GuessForEasyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuessForEasyTest.m; sourceTree = "<group>"; };
 		36867228D0D5B5C0A65A1596 /* tabbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar.png; sourceTree = "<group>"; };
 		3686727F864FC884E49A954E /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
 		3686730AB167FBFE962AB630 /* NGGuessTimesPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGGuessTimesPicker.m; sourceTree = "<group>"; };
+		368673362FFA43267B4CDEBE /* SinaWeiboAuthorizeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SinaWeiboAuthorizeView.m; path = ../SinaWeibo/SinaWeiboAuthorizeView.m; sourceTree = "<group>"; };
 		36867350B544807CEFDFE64C /* NGSetGuessTimesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGSetGuessTimesController.h; sourceTree = "<group>"; };
 		368673A0B206FE5E77865483 /* NGGameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGGameView.h; sourceTree = "<group>"; };
+		368673EAFA2E27FF19B73D5A /* SinaWeiboAuthorizeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SinaWeiboAuthorizeView.h; path = ../SinaWeibo/SinaWeiboAuthorizeView.h; sourceTree = "<group>"; };
 		368674CF3744C8F456E5D076 /* NGLevelPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGLevelPicker.h; sourceTree = "<group>"; };
+		368674D82F04BA7B6D5125BD /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = close.png; path = ../SinaWeibo/SinaWeibo.bundle/images/close.png; sourceTree = "<group>"; };
 		368675A2FA8E1B5C67F1CCF1 /* NGMaster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGMaster.m; sourceTree = "<group>"; };
 		368675E6B3E58550B8E1584F /* NGSettingsHomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGSettingsHomeView.h; sourceTree = "<group>"; };
 		3686766CC7DD44B0B798B822 /* NGValidation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGValidation.m; sourceTree = "<group>"; };
+		3686774BBCFC7E7B468DF326 /* close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "close@2x.png"; path = "../SinaWeibo/SinaWeibo.bundle/images/close@2x.png"; sourceTree = "<group>"; };
 		36867834D6D2C5A0FE339B9B /* NGSettingsHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGSettingsHomeController.h; sourceTree = "<group>"; };
 		3686787BBFF8D4EB072108D3 /* selection-tab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "selection-tab.png"; sourceTree = "<group>"; };
+		368678B3BE5F6E4110F312A7 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = ../JSONKit/JSONKit.m; sourceTree = "<group>"; };
+		368678F000246C9C13AF8E91 /* NGSettingTableLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGSettingTableLogic.m; sourceTree = "<group>"; };
 		3686796E439E6E68850FB0CA /* CreateUIElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateUIElement.m; sourceTree = "<group>"; };
+		36867A46ECA84F693F74A6B0 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONKit.h; path = ../JSONKit/JSONKit.h; sourceTree = "<group>"; };
 		36867A551206BBEFF6D96891 /* 12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 12.png; sourceTree = "<group>"; };
+		36867AD4F79FC1B0AC99173D /* SinaWeiboConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SinaWeiboConstants.h; path = ../SinaWeibo/SinaWeiboConstants.h; sourceTree = "<group>"; };
 		36867AEF4A9ECA68A426EE09 /* NGSettingsHomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGSettingsHomeView.m; sourceTree = "<group>"; };
 		36867B13348C8B4978283914 /* NGMaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGMaster.h; sourceTree = "<group>"; };
 		36867B241F328E4CC14993AB /* NGSetLevelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGSetLevelView.h; sourceTree = "<group>"; };
 		36867B29034C7AD42B6E3EA3 /* NGGuessTimesPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGGuessTimesPicker.h; sourceTree = "<group>"; };
 		36867B58DE1B04484ABE7FE2 /* tabbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar@2x.png"; sourceTree = "<group>"; };
 		36867BAEE035FF828DB01E31 /* CreateUIElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateUIElement.h; sourceTree = "<group>"; };
+		36867BCBA6F2B21263F6BA9C /* SinaWeiboRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SinaWeiboRequest.m; path = ../SinaWeibo/SinaWeiboRequest.m; sourceTree = "<group>"; };
+		36867C59A6527D458DE36D22 /* SinaWeibo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SinaWeibo.h; path = ../SinaWeibo/SinaWeibo.h; sourceTree = "<group>"; };
 		36867C6030DFE53A55B9DDA2 /* NGSetGuessTimesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGSetGuessTimesView.m; sourceTree = "<group>"; };
+		36867D0FC026E66CF836CD00 /* SinaWeiboRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SinaWeiboRequest.h; path = ../SinaWeibo/SinaWeiboRequest.h; sourceTree = "<group>"; };
 		36867DEDACFE5B5166CE0709 /* 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 11.png; sourceTree = "<group>"; };
 		36867E55E4D509E8C8603007 /* NGSetLevelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGSetLevelController.h; sourceTree = "<group>"; };
 		36867EAD9C82BCD77AA437EF /* NGSetLevelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGSetLevelController.m; sourceTree = "<group>"; };
+		36867ECC500C331BAA2914E6 /* SinaWeibo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SinaWeibo.m; path = ../SinaWeibo/SinaWeibo.m; sourceTree = "<group>"; };
 		36867F1F2C50096E351D6D61 /* NGSetGuessTimesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGSetGuessTimesView.h; sourceTree = "<group>"; };
 		36867F2D346BB4BDFDBE2745 /* NGGameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGGameView.m; sourceTree = "<group>"; };
 		36867F7011868846277045FE /* NGSetLevelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGSetLevelView.m; sourceTree = "<group>"; };
@@ -162,9 +182,25 @@
 				36867015663C42524441AFDE /* NGSettingsHomeController.m */,
 				368675E6B3E58550B8E1584F /* NGSettingsHomeView.h */,
 				36867AEF4A9ECA68A426EE09 /* NGSettingsHomeView.m */,
+				368678F000246C9C13AF8E91 /* NGSettingTableLogic.m */,
+				3686713D40E84CA4D3CACAF8 /* NGSettingTableLogic.h */,
 			);
-			lastKnownFileType = text;
 			path = settingHome;
+			sourceTree = "<group>";
+		};
+		36867499EF73036A2B6806BA /* SinaWeibo */ = {
+			isa = PBXGroup;
+			children = (
+				368678ED808C490178F8DA2D /* SinaWeibo.bundle */,
+				36867C59A6527D458DE36D22 /* SinaWeibo.h */,
+				36867ECC500C331BAA2914E6 /* SinaWeibo.m */,
+				368673EAFA2E27FF19B73D5A /* SinaWeiboAuthorizeView.h */,
+				368673362FFA43267B4CDEBE /* SinaWeiboAuthorizeView.m */,
+				36867AD4F79FC1B0AC99173D /* SinaWeiboConstants.h */,
+				36867D0FC026E66CF836CD00 /* SinaWeiboRequest.h */,
+				36867BCBA6F2B21263F6BA9C /* SinaWeiboRequest.m */,
+			);
+			name = SinaWeibo;
 			sourceTree = "<group>";
 		};
 		3686758AE1EEDDF845D12779 /* GameSetting */ = {
@@ -175,6 +211,32 @@
 				368674517DF67ACFCA028A64 /* settingHome */,
 			);
 			path = GameSetting;
+			sourceTree = "<group>";
+		};
+		36867804499783E332FF7F7A /* images */ = {
+			isa = PBXGroup;
+			children = (
+				368674D82F04BA7B6D5125BD /* close.png */,
+				3686774BBCFC7E7B468DF326 /* close@2x.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		368678ED808C490178F8DA2D /* SinaWeibo.bundle */ = {
+			isa = PBXGroup;
+			children = (
+				36867804499783E332FF7F7A /* images */,
+			);
+			name = SinaWeibo.bundle;
+			sourceTree = "<group>";
+		};
+		36867A3946102E3E01E56BC3 /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				36867A46ECA84F693F74A6B0 /* JSONKit.h */,
+				368678B3BE5F6E4110F312A7 /* JSONKit.m */,
+			);
+			name = JSONKit;
 			sourceTree = "<group>";
 		};
 		36867DED9932F1B59BEE5D82 /* Utility */ = {
@@ -192,6 +254,8 @@
 				4943209E169FCEA100069580 /* NGGuess.m */,
 				36867B13348C8B4978283914 /* NGMaster.h */,
 				368675A2FA8E1B5C67F1CCF1 /* NGMaster.m */,
+				36867A3946102E3E01E56BC3 /* JSONKit */,
+				36867499EF73036A2B6806BA /* SinaWeibo */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -386,6 +450,8 @@
 				36867FB87CFE9DEC402F0252 /* selection-tab@2x.png in Resources */,
 				368675B4753111AA919FEB79 /* tabbar.png in Resources */,
 				36867627820E7AE81ED3A7A4 /* tabbar@2x.png in Resources */,
+				36867024E6977E881D16A197 /* close.png in Resources */,
+				36867B8EA273BF820D704F92 /* close@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +504,11 @@
 				36867518726845DF6E7B7EB0 /* NGSetLevelView.m in Sources */,
 				36867C8B82EB7EC5A677EE50 /* NGLevelPicker.m in Sources */,
 				368671F15314D4A949DF73A6 /* NGGuessTimesPicker.m in Sources */,
+				36867C15FFC112DCB5F06CC9 /* JSONKit.m in Sources */,
+				3686742063B5A319FE52E6C4 /* SinaWeibo.m in Sources */,
+				368678ECA2A46ACD13B632C0 /* SinaWeiboAuthorizeView.m in Sources */,
+				368679A0C28E51E64F08C358 /* SinaWeiboRequest.m in Sources */,
+				3686757B5E90B5A5998152E6 /* NGSettingTableLogic.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,6 +610,7 @@
 				GCC_PREFIX_HEADER = "NumberGuess/NumberGuess-Prefix.pch";
 				INFOPLIST_FILE = "NumberGuess/NumberGuess-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/NumberGuess/sinaweibo_ios_sdk&demo\"/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -550,6 +622,7 @@
 				GCC_PREFIX_HEADER = "NumberGuess/NumberGuess-Prefix.pch";
 				INFOPLIST_FILE = "NumberGuess/NumberGuess-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/NumberGuess/sinaweibo_ios_sdk&demo\"/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

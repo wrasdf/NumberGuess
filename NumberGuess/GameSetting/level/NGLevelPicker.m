@@ -6,7 +6,6 @@
 
 
 #import "NGLevelPicker.h"
-#import "NGGameViewController.h"
 
 
 @implementation NGLevelPicker {
@@ -55,11 +54,9 @@
 
 // Do something with the selected row.
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
-    NSLog(@"You selected this: %@", [levelSource objectAtIndex:(NSUInteger) row]);
     [config setObject:[levelSource objectAtIndex:(NSUInteger) row] forKey:@"Level"];
     [config synchronize];
     [notificationCenter postNotificationName:@"NGResetGame" object:nil];
-    NSLog(@"This is the Level in conig : ,%@",[config stringForKey:@"Level"]);
 }
 
 @end
