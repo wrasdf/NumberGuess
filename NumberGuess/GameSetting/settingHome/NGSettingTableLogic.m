@@ -43,7 +43,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 
-    if([[self.items objectAtIndex:(NSUInteger) indexPath.row] isEqualToString:@"Levels"]){
+    if([[self.items objectAtIndex:(NSUInteger) indexPath.row] isEqualToString:@"Level"]){
         [self.delegate changeViewToSetLevel];
     }else{
         [self.delegate changeViewToSetGuessTimes];
